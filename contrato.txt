@@ -1,0 +1,37 @@
+endpoint = localhost:8080
+url: cpp/ventas
+{
+	"cliente": String(Autocompletar),
+	"clienteID": number,
+	"direccion"" string,
+	"ciudad": String(Autocompletar),
+	"vendedor": string(Autocompletar),
+	"fechaPedido": string(Autocompletar),
+	"fechaEntrega": String(Autocompletar),
+	"metodoPago": String(Autocompletar),
+	"productos": 
+	[
+	{
+		"productoID" : number,
+		"cantidad": number
+		"costo": number
+	}
+	{
+		"productoID" : number,
+		"cantidad": number
+		"costo": number
+	}
+	{
+		"productoID" : number,
+		"cantidad": number
+		"costo": number
+	}
+	]
+}
+
+Respuesta:
+{
+	"HTTPCode": 200,
+	"IP":XXXXX
+}
+
