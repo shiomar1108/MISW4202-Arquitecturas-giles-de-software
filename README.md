@@ -14,6 +14,8 @@ MISW4202 Ciclo 11 Equipo1
 
 ## Ejecución:
 
+Desde la raiz del proyecto, se debe ejecutar en una terminal el siguiente comando `docker compose up` para que docker realice la creación de las imagenes y el despliegue de los contenedores.
+
 ## Descripcion de los Microservicios:
 
 ### Ventas

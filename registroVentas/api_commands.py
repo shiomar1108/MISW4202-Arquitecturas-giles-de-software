@@ -1,4 +1,4 @@
-from base import app, api, ma, db, RegistroVenta, process_venta,  registroventa_schema, q, Resource, Flask, request
+from base import app, api, ma, db, process_venta,  q, Resource, Flask, request
 
 class RegistroVentaResource(Resource):
 
