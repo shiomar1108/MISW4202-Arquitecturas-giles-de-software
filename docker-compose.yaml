@@ -4,6 +4,8 @@ services:
     image: redis
     volumes: 
       - ./redis:/data
+    ports:
+      - 6379:6379  
 
   mcs_ventas_01:
     image: mcs_ventas:latest

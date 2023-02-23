@@ -1,22 +1,23 @@
-from base import app, api, ma, q, Resource, Flask, request
+from base import app, api,  q
 import socket
 from datetime import datetime
 import json
 import jsonschema
 from jsonschema import validate
 from sender import send_venta
-
+from flask_restful import Resource
+from flask import request
 
 class VentaListResource(Resource):
 
-    def valida_json(jsonData):
+    def valida_json(self,jsonData):
         try:
             json.loads(jsonData)
         except ValueError as err:
             return False
         return True
     
-    def valida_estructura(jsonData):
+    def valida_estructura(self,jsonData):
         
         ventaSchema = {
             "type": "object",
@@ -29,7 +30,7 @@ class VentaListResource(Resource):
                 "fechaPedido": {"type": "string"},
                 "fechaEntrega": {"type": "string"},
                 "metodoPago": {"type": "string"},
-                
+                "productos" : []
             },
         }
         try:
@@ -38,8 +39,10 @@ class VentaListResource(Resource):
             return False
         return True
     
-    def valida_campos(self):
-        return False
+    def valida_campos(self,orden):
+        if  orden["cliente"] == "":
+           orden["cliente"] = "Generico"
+        return orden
     
     def post(self):
         # Validación de los campos de entrada y enmascaramiento
@@ -53,25 +56,16 @@ class VentaListResource(Resource):
             "metodoPago": request.json["metodoPago"],
             "productos": request.json["productos"]
         }
-        hostIp = socket.gethostbyname(socket.gethostname())
-        if self.valida_json(request.json) == False:
-            response = {
-                "HTTPCode": 404,
-                "IP": hostIp,
-            }
-
-            return response
         
-        if self.valida_estructura(request.json) == False:
-            response = {
-                "HTTPCode": 404,
-                "IP": hostIp,
-            }
-
-            return response
- 
+        hostIp = socket.gethostbyname(socket.gethostname())
+        
+      
+        orden = self.valida_campos(orden_validada)
+     
         # Enviamos la orden a la cola de Redis
-        q.enqueue(send_venta, orden_validada)
+        
+        q.publish('classical_music', json.dumps(orden))
+        
         # Obenemos la ip del servidor que toma la petición
         
         response = {
