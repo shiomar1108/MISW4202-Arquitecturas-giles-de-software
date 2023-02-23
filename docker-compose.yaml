@@ -44,6 +44,8 @@ services:
     build: ./registroVentas
     working_dir: /backend/
     command: python api_commands.py
+    ports:
+      - 6000:6000  
     depends_on: 
       - redis
 

@@ -64,7 +64,7 @@ class VentaListResource(Resource):
      
         # Enviamos la orden a la cola de Redis
         
-        q.publish('classical_music', json.dumps(orden))
+        q.publish('ventas', json.dumps(orden))
         
         # Obenemos la ip del servidor que toma la petición
         
