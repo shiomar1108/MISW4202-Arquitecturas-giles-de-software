@@ -1,14 +1,14 @@
 URL de consumo = http://backend_balancer:8080/cpp/ventas
 
 {
-   "cliente":"prueba",
+   "cliente":"prueba (Autocompletar)",
    "clienteID":1281928192,
    "direccion":"direccion prueba",
    "ciudad":"Bogota",
-   "vendedor":"Vendedor prueba",
-   "fechaPedido":"2023-02-18",
-   "fechaEntrega":"2023-02-18",
-   "metodoPago":"Tarjeta Credito",
+   "vendedor":"Vendedor prueba (Autocompletar)",
+   "fechaPedido":"2023-02-18 (Autocompletar)",
+   "fechaEntrega":"2023-02-18 (Autocompletar)",
+   "metodoPago":"Tarjeta Credito (Autocompletar)",
    "productos":[
       {
          "productoID":10000001,
