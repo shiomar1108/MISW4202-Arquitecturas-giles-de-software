@@ -53,14 +53,27 @@ class VentaListResource(Resource):
             "metodoPago": request.json["metodoPago"],
             "productos": request.json["productos"]
         }
-        
-   
+        hostIp = socket.gethostbyname(socket.gethostname())
+        if self.valida_json(request.json) == False:
+            response = {
+                "HTTPCode": 404,
+                "IP": hostIp,
+            }
 
+            return response
+        
+        if self.valida_estructura(request.json) == False:
+            response = {
+                "HTTPCode": 404,
+                "IP": hostIp,
+            }
+
+            return response
  
         # Enviamos la orden a la cola de Redis
         q.enqueue(send_venta, orden_validada)
         # Obenemos la ip del servidor que toma la petición
-        hostIp = socket.gethostbyname(socket.gethostname())
+        
         response = {
             "HTTPCode": 200,
             "IP": hostIp,
