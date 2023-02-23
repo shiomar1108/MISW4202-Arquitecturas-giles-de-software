@@ -1,15 +1,14 @@
-from flask import Flask, request, jsonify
+from flask import Flask  
 from flask_cors import CORS
-from flask_marshmallow import Marshmallow
-from flask_restful import Api, Resource
+from flask_restful import Api
 from redis import Redis
-from rq import Queue
 
 app = Flask(__name__)
-ma = Marshmallow(app)
 cors = CORS(app)
 api = Api(app)
+q = Redis(host='redis', port=6379, db=0)
+#q = Redis(host='localhost', port=6379, db=0)
 
-q = Queue(connection=Redis(host='redis', port=6379, db=0))
+
 
 

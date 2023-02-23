@@ -8,3 +8,4 @@ marshmallow-sqlalchemy
 requests
 redis
 rq
+jsonschema

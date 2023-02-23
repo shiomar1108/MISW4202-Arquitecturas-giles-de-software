@@ -16,7 +16,7 @@ RUN pip install -r requirements.txt
 COPY . .
 
 # Expose port 8080 to the outside world
-EXPOSE 5000
+EXPOSE 6000
 
 # Run the executable
 CMD ["python", "api_commands.py"]
