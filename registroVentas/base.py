@@ -1,21 +1,11 @@
-from flask import Flask, request, jsonify
-from flask_sqlalchemy import SQLAlchemy
-from flask_marshmallow import Marshmallow
-from flask_restful import Api, Resource
-import requests
-from redis import Redis
+import redis
 
+pool = redis.ConnectionPool(host='localhost', port=6379, db=0)
+redis = redis.Redis(connection_pool=pool)
 
-
-app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////mnt/registroVentas.db'
-db = SQLAlchemy(app)
-ma = Marshmallow(app)
-api = Api(app)
-#q = Redis(host='localhost', port=6379, db=0)
-q = Redis(host='redis', port=6379, db=0)
-
-
-
-def process_venta(venta_id):
-    print('Se procesa venta')
+while True:
+    for i in range(0, redis.llen('ventas')):
+        #Procesar orden de Venta
+        mensaje = redis.lpop('ventas')
+        with open('log_registroVenta.txt','a') as file:
+            file.write(f"{str(mensaje)}\n")
