@@ -14,11 +14,8 @@ app = Flask(__name__)
 cors = CORS(app)
 api = Api(app)
 
-r = redis.Redis(
-    host='127.0.0.1',
-    port=6379,
-    decode_responses=True 
-)
+pool = redis.ConnectionPool(host='localhost', port=6379, db=0)
+redis = redis.Redis(connection_pool=pool)
 
 class VentaListResource(Resource):
 
@@ -70,16 +67,12 @@ class VentaListResource(Resource):
         }
         
         hostIp = socket.gethostbyname(socket.gethostname())
-        
-      
         orden = self.valida_campos(orden_validada)
      
         # Enviamos la orden a la cola de Redis
-        
-        r.publish('ventas', json.dumps(orden))
+        redis.rpush('ventas', json.dumps(orden))
         
         # Obenemos la ip del servidor que toma la petición
-        
         response = {
             "HTTPCode": 200,
             "IP": hostIp,
