@@ -1,0 +1,11 @@
+colorama
+Flask
+Flask-Cors
+Flask-RESTful
+itsdangerous
+Jinja2
+jsonschema
+redis
+requests
+rq
+Werkzeug
