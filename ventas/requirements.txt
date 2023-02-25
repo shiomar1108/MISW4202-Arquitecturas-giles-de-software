@@ -1,11 +1,16 @@
 colorama
 Flask
 Flask-Cors
+flask-marshmallow
 Flask-RESTful
+Flask-SQLAlchemy
 itsdangerous
 Jinja2
 jsonschema
+marshmallow
+marshmallow-sqlalchemy
 redis
 requests
 rq
+SQLAlchemy
 Werkzeug
