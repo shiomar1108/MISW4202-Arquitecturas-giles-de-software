@@ -59,6 +59,7 @@ class VentaListResource(Resource):
             "cliente": request.json["cliente"],
             "clienteID": request.json["clienteID"],
             "direccion": request.json["direccion"],
+            "vendedor": request.json["vendedor"],
             "ciudad": request.json["ciudad"],
             "vendedor": request.json["vendedor"],
             "fechaPedido": "",
