@@ -1,6 +1,6 @@
 import redis
 import socket
-from datetime import datetime
+from datetime import date, datetime, timedelta
 import json
 import jsonschema
 from jsonschema import validate
@@ -49,19 +49,33 @@ class VentaListResource(Resource):
         return True
     
     def valida_campos(self,orden):
+        fecha = date.today()
+
         if  orden["cliente"] == "":
            orden["cliente"] = "Generico"
+        if  orden["ciudad"] == "":
+           orden["ciudad"] = "Bogota"
+        if  orden["fechaPedido"] == "":
+            orden["fechaPedido"] = fecha.strftime("%Y-%m-%d")
+        if  orden["fechaEntrega"] == "":
+            orden["fechaEntrega"] = (fecha + timedelta(days=3)).strftime("%Y-%m-%d")
+        if  orden["metodoPago"] == "":
+            orden["metodoPago"] = "Financiamiento"
+        if  orden["vendedor"] == "":
+            orden["vendedor"] = "Generico"
         return orden
     
     def post(self):
         # Validación de los campos de entrada y enmascaramiento
+
         orden_validada = {
             "cliente": request.json["cliente"],
             "clienteID": request.json["clienteID"],
             "direccion": request.json["direccion"],
+            "vendedor": request.json["vendedor"],
             "ciudad": request.json["ciudad"],
-            "fechaPedido": str(datetime.strptime(request.json["fechaPedido"], '%Y-%m-%d').date()),
-            "fechaEntrega": str(datetime.strptime(request.json["fechaEntrega"], '%Y-%m-%d').date()),
+            "fechaPedido": request.json["fechaPedido"],
+            "fechaEntrega": request.json["fechaEntrega"],
             "metodoPago": request.json["metodoPago"],
             "productos": request.json["productos"]
         }
