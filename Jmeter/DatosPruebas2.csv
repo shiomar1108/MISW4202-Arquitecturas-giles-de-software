@@ -1,0 +1,373 @@
+﻿cliente;clienteID;direccion;ciudad;vendedor;fechaPedido;fechaEntrega;metodoPago
+;1234567;Cl 1Av 12 14;Bogota;Vendedor Zona 1;2023-02-24;2023-02-25;Efectivo
+Cleinte Prueba 2;1234568;Cl 3 5 a47;Bogota;Vendedor Zona 7;;2023-02-27;Transferencia
+Cleinte Prueba 3;1234569;Cl 1Av 12 15;Medellin;;2023-02-25;2023-02-28;Contra Entrega
+Cleinte Prueba 4;1234570;Cl 3 5 a48;Cali;Vendedor Zona 5;;2013-03-01;Efectivo
+Cleinte Prueba 5;1234571;Cl 1Av 12 16;Barranquilla;Vendedor Zona 3;2023-02-22;2023-03-05;
+;1234572;Cl 3 5 a49;Bucaramanga;Vendedor Zona 6;;2023-03-04;Contra Entrega
+Cleinte Prueba 7;1234573;Cl 1Av 12 17;Leticia;Vendedor Zona 1;2023-02-24;2023-02-25;Efectivo
+Cleinte Prueba 8;1234574;Cl 3 5 a50;Bogota;Vendedor Zona 7;2023-02-25;2023-02-27;Transferencia
+Cleinte Prueba 9;1234575;Cl 1Av 12 18;Bogota;Vendedor Zona 2;;2023-02-28;Contra Entrega
+Cleinte Prueba 10;1234576;Cl 3 5 a51;Medellin;Vendedor Zona 5;;2013-03-01;
+Cleinte Prueba 11;1234577;Cl 1Av 12 19;Cali;;;2023-03-05;Transferencia
+Cleinte Prueba 12;1234578;Cl 3 5 a52;Barranquilla;Vendedor Zona 6;2023-02-24;2023-03-04;Contra Entrega
+Cleinte Prueba 13;1234579;Cl 1Av 12 20;Bucaramanga;Vendedor Zona 1;2023-02-25;2023-02-25;
+Cleinte Prueba 14;1234580;Cl 3 5 a53;Leticia;;2023-02-23;2023-02-27;Transferencia
+Cleinte Prueba 15;1234581;Cl 1Av 12 21;Bogota;Vendedor Zona 2;2023-02-22;2023-02-28;Contra Entrega
+Cleinte Prueba 16;1234582;Cl 3 5 a54;Bogota;Vendedor Zona 5;2023-02-24;2013-03-01;Efectivo
+Cleinte Prueba 17;1234583;Cl 1Av 12 22;Medellin;Vendedor Zona 3;2023-02-24;2023-03-05;Transferencia
+Cleinte Prueba 18;1234584;Cl 3 5 a55;Cali;Vendedor Zona 6;2023-02-25;2023-03-04;Contra Entrega
+;1234585;Cl 1Av 12 23;Barranquilla;Vendedor Zona 1;2023-02-23;2023-02-25;Efectivo
+Cleinte Prueba 20;1234586;Cl 3 5 a56;Bucaramanga;Vendedor Zona 7;;;Transferencia
+Cleinte Prueba 21;1234587;Cl 1Av 12 24;Leticia;;2023-02-24;2023-02-28;Contra Entrega
+Cleinte Prueba 22;1234588;Cl 3 5 a57;Bogota;Vendedor Zona 5;2023-02-24;2013-03-01;Efectivo
+Cleinte Prueba 23;1234589;Cl 1Av 12 25;Bogota;Vendedor Zona 3;2023-02-25;2023-03-05;
+;1234590;Cl 3 5 a58;Medellin;Vendedor Zona 6;;2023-03-04;Contra Entrega
+Cleinte Prueba 25;1234591;Cl 1Av 12 26;Cali;Vendedor Zona 1;;2023-02-25;Efectivo
+Cleinte Prueba 26;1234592;Cl 3 5 a59;Barranquilla;Vendedor Zona 7;2023-02-24;2023-02-27;Transferencia
+Cleinte Prueba 27;1234593;Cl 1Av 12 27;Bucaramanga;Vendedor Zona 2;2023-02-24;2023-02-28;Contra Entrega
+Cleinte Prueba 28;1234594;Cl 3 5 a60;Leticia;Vendedor Zona 5;2023-02-25;2013-03-01;Efectivo
+Cleinte Prueba 29;1234595;Cl 1Av 12 28;Bogota;Vendedor Zona 3;2023-02-23;2023-03-05;Transferencia
+Cleinte Prueba 30;1234596;Cl 3 5 a61;Bogota;Vendedor Zona 6;2023-02-22;2023-03-04;Contra Entrega
+Cleinte Prueba 31;1234597;Cl 1Av 12 29;Medellin;Vendedor Zona 1;2023-02-24;2023-02-25;
+Cleinte Prueba 32;1234598;Cl 3 5 a62;Cali;;2023-02-24;2023-02-27;Transferencia
+Cleinte Prueba 33;1234599;Cl 1Av 12 30;Barranquilla;Vendedor Zona 2;2023-02-25;2023-02-28;Contra Entrega
+Cleinte Prueba 34;1234600;Cl 3 5 a63;Bucaramanga;Vendedor Zona 5;2023-02-23;2013-03-01;Efectivo
+Cleinte Prueba 35;1234601;Cl 1Av 12 31;Leticia;Vendedor Zona 3;2023-02-22;2023-03-05;Transferencia
+Cleinte Prueba 36;1234602;Cl 3 5 a64;Bogota;Vendedor Zona 6;2023-02-24;2023-03-04;Contra Entrega
+;1234603;Cl 1Av 12 32;Bogota;Vendedor Zona 1;2023-02-24;2023-02-25;Efectivo
+Cleinte Prueba 38;1234604;Cl 3 5 a65;Medellin;Vendedor Zona 7;2023-02-25;;Transferencia
+Cleinte Prueba 39;1234605;Cl 1Av 12 33;Cali;;;2023-02-28;Contra Entrega
+Cleinte Prueba 40;1234606;Cl 3 5 a66;Barranquilla;Vendedor Zona 5;2023-02-22;2013-03-01;Efectivo
+Cleinte Prueba 41;1234607;Cl 1Av 12 34;Bucaramanga;Vendedor Zona 3;2023-02-24;2023-03-05;
+;1234608;Cl 3 5 a67;Leticia;Vendedor Zona 6;2023-02-24;2023-03-04;Contra Entrega
+Cleinte Prueba 43;1234609;Cl 1Av 12 35;Bogota;Vendedor Zona 1;2023-02-25;2023-02-25;Efectivo
+Cleinte Prueba 44;1234610;Cl 3 5 a68;Bogota;Vendedor Zona 7;2023-02-23;2023-02-27;Transferencia
+Cleinte Prueba 45;1234611;Cl 1Av 12 36;Medellin;Vendedor Zona 2;2023-02-22;2023-02-28;Contra Entrega
+Cleinte Prueba 46;1234612;Cl 3 5 a69;Cali;Vendedor Zona 5;2023-02-24;2013-03-01;
+Cleinte Prueba 47;1234613;Cl 1Av 12 37;Barranquilla;Vendedor Zona 3;2023-02-24;2023-03-05;Transferencia
+Cleinte Prueba 48;1234614;Cl 3 5 a70;Bucaramanga;Vendedor Zona 6;2023-02-25;2023-03-04;Contra Entrega
+Cleinte Prueba 49;1234615;Cl 1Av 12 38;Leticia;Vendedor Zona 1;2023-02-23;2023-02-25;
+Cleinte Prueba 50;1234616;Cl 3 5 a71;Bogota;;2023-02-22;2023-02-27;Transferencia
+Cleinte Prueba 51;1234617;Cl 1Av 12 39;Bogota;Vendedor Zona 2;2023-02-24;2023-02-28;Contra Entrega
+Cleinte Prueba 52;1234618;Cl 3 5 a72;Medellin;Vendedor Zona 5;2023-02-24;2013-03-01;Efectivo
+Cleinte Prueba 53;1234619;Cl 1Av 12 40;Cali;Vendedor Zona 3;2023-02-25;2023-03-05;Transferencia
+Cleinte Prueba 54;1234620;Cl 3 5 a73;Barranquilla;Vendedor Zona 6;2023-02-23;2023-03-04;Contra Entrega
+;1234621;Cl 1Av 12 41;Bucaramanga;Vendedor Zona 1;2023-02-22;2023-02-25;Efectivo
+Cleinte Prueba 56;1234622;Cl 3 5 a74;Leticia;Vendedor Zona 7;2023-02-24;;Transferencia
+Cleinte Prueba 57;1234623;Cl 1Av 12 42;Bogota;;;2023-02-28;Contra Entrega
+Cleinte Prueba 58;1234624;Cl 3 5 a75;Bogota;Vendedor Zona 5;2023-02-25;2013-03-01;Efectivo
+Cleinte Prueba 59;1234625;Cl 1Av 12 43;Medellin;Vendedor Zona 3;2023-02-23;2023-03-05;
+;1234626;Cl 3 5 a76;Cali;Vendedor Zona 6;2023-02-22;2023-03-04;Contra Entrega
+Cleinte Prueba 61;1234627;Cl 1Av 12 44;Barranquilla;Vendedor Zona 1;2023-02-24;2023-02-25;Efectivo
+Cleinte Prueba 62;1234628;Cl 3 5 a77;Bucaramanga;Vendedor Zona 7;2023-02-24;2023-02-27;Transferencia
+Cleinte Prueba 63;1234629;Cl 1Av 12 45;Leticia;Vendedor Zona 2;2023-02-25;2023-02-28;Contra Entrega
+Cleinte Prueba 64;1234630;Cl 3 5 a78;Bogota;Vendedor Zona 5;;2013-03-01;
+Cleinte Prueba 65;1234631;Cl 1Av 12 46;Bogota;Vendedor Zona 3;;2023-03-05;Transferencia
+Cleinte Prueba 66;1234632;Cl 3 5 a79;Medellin;Vendedor Zona 6;2023-02-24;2023-03-04;Contra Entrega
+Cleinte Prueba 67;1234633;Cl 1Av 12 47;Cali;Vendedor Zona 1;2023-02-24;2023-02-25;
+Cleinte Prueba 68;1234634;Cl 3 5 a80;Barranquilla;;2023-02-25;2023-02-27;Transferencia
+Cleinte Prueba 69;1234635;Cl 1Av 12 48;Bucaramanga;Vendedor Zona 2;2023-02-23;2023-02-28;Contra Entrega
+Cleinte Prueba 70;1234636;Cl 3 5 a81;Leticia;Vendedor Zona 5;2023-02-22;2013-03-01;Efectivo
+Cleinte Prueba 71;1234637;Cl 1Av 12 49;Bogota;Vendedor Zona 3;2023-02-24;2023-03-05;Transferencia
+Cleinte Prueba 72;1234638;Cl 3 5 a82;Bogota;Vendedor Zona 6;2023-02-24;2023-03-04;Contra Entrega
+;1234639;Cl 1Av 12 50;Medellin;Vendedor Zona 1;2023-02-25;2023-02-25;Efectivo
+Cleinte Prueba 74;1234640;Cl 3 5 a83;Cali;Vendedor Zona 7;2023-02-23;;Transferencia
+Cleinte Prueba 75;1234641;Cl 1Av 12 51;Barranquilla;;2023-02-22;2023-02-28;Contra Entrega
+Cleinte Prueba 76;1234642;Cl 3 5 a84;Bucaramanga;Vendedor Zona 5;;2013-03-01;Efectivo
+Cleinte Prueba 77;1234643;Cl 1Av 12 52;Leticia;Vendedor Zona 3;2023-02-24;2023-03-05;
+;1234644;Cl 3 5 a85;Bogota;Vendedor Zona 6;2023-02-25;2023-03-04;Contra Entrega
+Cleinte Prueba 79;1234645;Cl 1Av 12 53;Bogota;Vendedor Zona 1;2023-02-23;2023-02-25;Efectivo
+Cleinte Prueba 80;1234646;Cl 3 5 a86;Medellin;Vendedor Zona 7;2023-02-22;2023-02-27;Transferencia
+Cleinte Prueba 81;1234647;Cl 1Av 12 54;Cali;Vendedor Zona 2;2023-02-24;2023-02-28;Contra Entrega
+Cleinte Prueba 82;1234648;Cl 3 5 a87;Barranquilla;Vendedor Zona 5;2023-02-24;2013-03-01;
+Cleinte Prueba 83;1234649;Cl 1Av 12 55;Bucaramanga;Vendedor Zona 3;2023-02-25;2023-03-05;Transferencia
+Cleinte Prueba 84;1234650;Cl 3 5 a88;Leticia;Vendedor Zona 6;2023-02-23;2023-03-04;Contra Entrega
+Cleinte Prueba 85;1234651;Cl 1Av 12 56;Bogota;Vendedor Zona 1;2023-02-22;2023-02-25;
+Cleinte Prueba 86;1234652;Cl 3 5 a89;Bogota;;2023-02-24;2023-02-27;Transferencia
+Cleinte Prueba 87;1234653;Cl 1Av 12 57;Medellin;Vendedor Zona 2;2023-02-24;2023-02-28;Contra Entrega
+Cleinte Prueba 88;1234654;Cl 3 5 a90;Cali;Vendedor Zona 5;2023-02-25;2013-03-01;Efectivo
+Cleinte Prueba 89;1234655;Cl 1Av 12 58;Barranquilla;Vendedor Zona 3;2023-02-23;2023-03-05;Transferencia
+Cleinte Prueba 90;1234656;Cl 3 5 a91;Bucaramanga;Vendedor Zona 6;2023-02-22;2023-03-04;Contra Entrega
+;1234657;Cl 1Av 12 59;Leticia;Vendedor Zona 1;2023-02-24;2023-02-25;Efectivo
+Cleinte Prueba 92;1234658;Cl 3 5 a92;Bogota;Vendedor Zona 7;2023-02-24;;Transferencia
+Cleinte Prueba 93;1234659;Cl 1Av 12 60;Bogota;;2023-02-25;2023-02-28;Contra Entrega
+Cleinte Prueba 94;1234660;Cl 3 5 a93;Medellin;Vendedor Zona 5;2023-02-23;2013-03-01;Efectivo
+Cleinte Prueba 95;1234661;Cl 1Av 12 61;Cali;Vendedor Zona 3;;2023-03-05;
+;1234662;Cl 3 5 a94;Barranquilla;Vendedor Zona 6;2023-02-24;2023-03-04;Contra Entrega
+Cleinte Prueba 97;1234663;Cl 1Av 12 62;Bucaramanga;Vendedor Zona 1;2023-02-24;2023-02-25;Efectivo
+Cleinte Prueba 98;1234664;Cl 3 5 a95;Leticia;Vendedor Zona 7;2023-02-25;2023-02-27;Transferencia
+Cleinte Prueba 99;1234665;Cl 1Av 12 63;Bogota;Vendedor Zona 2;2023-02-23;2023-02-28;Contra Entrega
+Cleinte Prueba 100;1234666;Cl 3 5 a96;Bogota;Vendedor Zona 5;2023-02-22;2013-03-01;
+Cleinte Prueba 101;1234667;Cl 1Av 12 64;Medellin;Vendedor Zona 3;2023-02-24;2023-03-05;Transferencia
+Cleinte Prueba 102;1234668;Cl 3 5 a97;Cali;Vendedor Zona 6;2023-02-24;2023-03-04;Contra Entrega
+Cleinte Prueba 103;1234669;Cl 1Av 12 65;Barranquilla;Vendedor Zona 1;2023-02-25;2023-02-25;Efectivo
+Cleinte Prueba 104;1234670;Cl 3 5 a98;Bucaramanga;Vendedor Zona 7;2023-02-23;2023-02-27;Transferencia
+Cleinte Prueba 105;1234671;Cl 1Av 12 66;Leticia;Vendedor Zona 2;2023-02-22;2023-02-28;Contra Entrega
+Cleinte Prueba 106;1234672;Cl 3 5 a99;Bogota;Vendedor Zona 5;2023-02-24;2013-03-01;Efectivo
+Cleinte Prueba 107;1234673;Cl 1Av 12 67;Bogota;Vendedor Zona 3;2023-02-24;2023-03-05;Transferencia
+Cleinte Prueba 108;1234674;Cl 3 5 a100;Medellin;Vendedor Zona 6;2023-02-25;2023-03-04;Contra Entrega
+;1234675;Cl 1Av 12 68;Cali;Vendedor Zona 1;2023-02-23;2023-02-25;Efectivo
+Cleinte Prueba 110;1234676;Cl 3 5 a101;Barranquilla;Vendedor Zona 7;2023-02-22;;Transferencia
+Cleinte Prueba 111;1234677;Cl 1Av 12 69;Bucaramanga;;2023-02-24;2023-02-28;Contra Entrega
+Cleinte Prueba 112;1234678;Cl 3 5 a102;Leticia;Vendedor Zona 5;2023-02-24;2013-03-01;Efectivo
+Cleinte Prueba 113;1234679;Cl 1Av 12 70;Bogota;Vendedor Zona 3;2023-02-25;2023-03-05;
+;1234680;Cl 3 5 a103;Bogota;Vendedor Zona 6;;2023-03-04;Contra Entrega
+Cleinte Prueba 115;1234681;Cl 1Av 12 71;Medellin;Vendedor Zona 1;2023-02-22;2023-02-25;Efectivo
+Cleinte Prueba 116;1234682;Cl 3 5 a104;Cali;Vendedor Zona 7;2023-02-24;2023-02-27;Transferencia
+Cleinte Prueba 117;1234683;Cl 1Av 12 72;Barranquilla;Vendedor Zona 2;2023-02-24;2023-02-28;Contra Entrega
+Cleinte Prueba 118;1234684;Cl 3 5 a105;Bucaramanga;Vendedor Zona 5;2023-02-25;2013-03-01;
+Cleinte Prueba 119;1234685;Cl 1Av 12 73;Leticia;Vendedor Zona 3;2023-02-23;2023-03-05;Transferencia
+Cleinte Prueba 120;1234686;Cl 3 5 a106;Bogota;Vendedor Zona 6;2023-02-22;2023-03-04;Contra Entrega
+Cleinte Prueba 121;1234687;Cl 1Av 12 74;Bogota;Vendedor Zona 1;2023-02-24;2023-02-25;
+Cleinte Prueba 122;1234688;Cl 3 5 a107;Medellin;;;2023-02-27;Transferencia
+Cleinte Prueba 123;1234689;Cl 1Av 12 75;Cali;Vendedor Zona 2;;2023-02-28;Contra Entrega
+Cleinte Prueba 124;1234690;Cl 3 5 a108;Barranquilla;Vendedor Zona 5;;2013-03-01;Efectivo
+Cleinte Prueba 125;1234691;Cl 1Av 12 76;Bucaramanga;Vendedor Zona 3;;2023-03-05;Transferencia
+Cleinte Prueba 126;1234692;Cl 3 5 a109;Leticia;Vendedor Zona 6;2023-02-24;2023-03-04;Contra Entrega
+;1234693;Cl 1Av 12 77;Bogota;Vendedor Zona 1;2023-02-24;2023-02-25;Efectivo
+Cleinte Prueba 128;1234694;Cl 3 5 a110;Bogota;Vendedor Zona 7;2023-02-25;;Transferencia
+Cleinte Prueba 129;1234695;Cl 1Av 12 78;Medellin;Vendedor Zona 2;2023-02-23;2023-02-28;Contra Entrega
+Cleinte Prueba 130;1234696;Cl 3 5 a111;Cali;Vendedor Zona 5;2023-02-22;2013-03-01;Efectivo
+Cleinte Prueba 131;1234697;Cl 1Av 12 79;Barranquilla;Vendedor Zona 3;2023-02-24;2023-03-05;Transferencia
+;1234698;Cl 3 5 a112;Bucaramanga;Vendedor Zona 6;2023-02-24;2023-03-04;Contra Entrega
+Cleinte Prueba 133;1234699;Cl 1Av 12 80;Leticia;Vendedor Zona 1;;2023-02-25;Efectivo
+Cleinte Prueba 134;1234700;Cl 3 5 a113;Bogota;Vendedor Zona 7;2023-02-23;2023-02-27;Transferencia
+Cleinte Prueba 135;1234701;Cl 1Av 12 81;Bogota;Vendedor Zona 2;2023-02-22;2023-02-28;Contra Entrega
+Cleinte Prueba 136;1234702;Cl 3 5 a114;Medellin;Vendedor Zona 5;2023-02-24;2013-03-01;
+Cleinte Prueba 137;1234703;Cl 1Av 12 82;Cali;Vendedor Zona 3;2023-02-24;2023-03-05;Transferencia
+Cleinte Prueba 138;1234704;Cl 3 5 a115;Barranquilla;Vendedor Zona 6;2023-02-25;2023-03-04;Contra Entrega
+Cleinte Prueba 139;1234705;Cl 1Av 12 83;Bucaramanga;Vendedor Zona 1;2023-02-23;2023-02-25;
+Cleinte Prueba 140;1234706;Cl 3 5 a116;Leticia;;2023-02-22;2023-02-27;Transferencia
+Cleinte Prueba 141;1234707;Cl 1Av 12 84;Bogota;Vendedor Zona 2;2023-02-24;2023-02-28;Contra Entrega
+Cleinte Prueba 142;1234708;Cl 3 5 a117;Bogota;Vendedor Zona 5;2023-02-24;2013-03-01;Efectivo
+Cleinte Prueba 143;1234709;Cl 1Av 12 85;Medellin;Vendedor Zona 3;2023-02-25;2023-03-05;Transferencia
+Cleinte Prueba 144;1234710;Cl 3 5 a118;Cali;Vendedor Zona 6;2023-02-23;2023-03-04;Contra Entrega
+;1234711;Cl 1Av 12 86;Barranquilla;Vendedor Zona 1;2023-02-22;2023-02-25;Efectivo
+Cleinte Prueba 146;1234712;Cl 3 5 a119;Bucaramanga;Vendedor Zona 7;2023-02-24;2023-02-27;Transferencia
+Cleinte Prueba 147;1234713;Cl 1Av 12 87;Leticia;;2023-02-24;2023-02-28;Contra Entrega
+Cleinte Prueba 148;1234714;Cl 3 5 a120;Bogota;Vendedor Zona 5;2023-02-25;2013-03-01;Efectivo
+Cleinte Prueba 149;1234715;Cl 1Av 12 88;Bogota;Vendedor Zona 3;2023-02-23;2023-03-05;
+;1234716;Cl 3 5 a121;Medellin;Vendedor Zona 6;2023-02-22;2023-03-04;Contra Entrega
+Cleinte Prueba 151;1234717;Cl 1Av 12 89;Cali;Vendedor Zona 1;2023-02-24;2023-02-25;Efectivo
+Cleinte Prueba 152;1234718;Cl 3 5 a122;Barranquilla;Vendedor Zona 7;;2023-02-27;Transferencia
+Cleinte Prueba 153;1234719;Cl 1Av 12 90;Bucaramanga;Vendedor Zona 2;2023-02-25;2023-02-28;Contra Entrega
+Cleinte Prueba 154;1234720;Cl 3 5 a123;Leticia;Vendedor Zona 5;2023-02-23;2013-03-01;
+Cleinte Prueba 155;1234721;Cl 1Av 12 91;Bogota;Vendedor Zona 3;2023-02-22;2023-03-05;Transferencia
+Cleinte Prueba 156;1234722;Cl 3 5 a124;Bogota;Vendedor Zona 6;2023-02-24;2023-03-04;Contra Entrega
+Cleinte Prueba 157;1234723;Cl 1Av 12 92;Medellin;Vendedor Zona 1;2023-02-24;2023-02-25;
+Cleinte Prueba 158;1234724;Cl 3 5 a125;Cali;;2023-02-25;2023-02-27;Transferencia
+Cleinte Prueba 159;1234725;Cl 1Av 12 93;Barranquilla;Vendedor Zona 2;2023-02-23;2023-02-28;Contra Entrega
+Cleinte Prueba 160;1234726;Cl 3 5 a126;Bucaramanga;Vendedor Zona 5;2023-02-22;2013-03-01;Efectivo
+Cleinte Prueba 161;1234727;Cl 1Av 12 94;Leticia;Vendedor Zona 3;2023-02-24;2023-03-05;Transferencia
+Cleinte Prueba 162;1234728;Cl 3 5 a127;Bogota;Vendedor Zona 6;2023-02-24;2023-03-04;Contra Entrega
+;1234729;Cl 1Av 12 95;Bogota;Vendedor Zona 1;2023-02-25;2023-02-25;Efectivo
+Cleinte Prueba 164;1234730;Cl 3 5 a128;Medellin;Vendedor Zona 7;2023-02-23;;Transferencia
+Cleinte Prueba 165;1234731;Cl 1Av 12 96;Cali;;2023-02-22;2023-02-28;Contra Entrega
+Cleinte Prueba 166;1234732;Cl 3 5 a129;Barranquilla;Vendedor Zona 5;2023-02-24;2013-03-01;Efectivo
+Cleinte Prueba 167;1234733;Cl 1Av 12 97;Bucaramanga;Vendedor Zona 3;2023-02-24;2023-03-05;
+;1234734;Cl 3 5 a130;Leticia;Vendedor Zona 6;2023-02-25;2023-03-04;Contra Entrega
+Cleinte Prueba 169;1234735;Cl 1Av 12 98;Bogota;Vendedor Zona 1;2023-02-23;2023-02-25;Efectivo
+Cleinte Prueba 170;1234736;Cl 3 5 a131;Bogota;Vendedor Zona 7;2023-02-22;2023-02-27;Transferencia
+Cleinte Prueba 171;1234737;Cl 1Av 12 99;Medellin;Vendedor Zona 2;;2023-02-28;Contra Entrega
+Cleinte Prueba 172;1234738;Cl 3 5 a132;Cali;Vendedor Zona 5;2023-02-24;2013-03-01;
+Cleinte Prueba 173;1234739;Cl 1Av 12 100;Barranquilla;Vendedor Zona 3;2023-02-25;2023-03-05;Transferencia
+Cleinte Prueba 174;1234740;Cl 3 5 a133;Bucaramanga;Vendedor Zona 6;2023-02-23;2023-03-04;Contra Entrega
+Cleinte Prueba 175;1234741;Cl 1Av 12 101;Leticia;Vendedor Zona 1;2023-02-22;2023-02-25;
+Cleinte Prueba 176;1234742;Cl 3 5 a134;Bogota;;2023-02-24;2023-02-27;Transferencia
+Cleinte Prueba 177;1234743;Cl 1Av 12 102;Bogota;Vendedor Zona 2;2023-02-24;2023-02-28;Contra Entrega
+Cleinte Prueba 178;1234744;Cl 3 5 a135;Medellin;Vendedor Zona 5;2023-02-25;2013-03-01;Efectivo
+Cleinte Prueba 179;1234745;Cl 1Av 12 103;Cali;Vendedor Zona 3;2023-02-23;2023-03-05;Transferencia
+Cleinte Prueba 180;1234746;Cl 3 5 a136;Barranquilla;Vendedor Zona 6;2023-02-22;2023-03-04;Contra Entrega
+;1234747;Cl 1Av 12 104;Bucaramanga;Vendedor Zona 1;2023-02-24;2023-02-25;Efectivo
+Cleinte Prueba 182;1234748;Cl 3 5 a137;Leticia;Vendedor Zona 7;;;Transferencia
+Cleinte Prueba 183;1234749;Cl 1Av 12 105;Bogota;;2023-02-25;2023-02-28;Contra Entrega
+Cleinte Prueba 184;1234750;Cl 3 5 a138;Bogota;Vendedor Zona 5;2023-02-23;2013-03-01;Efectivo
+Cleinte Prueba 185;1234751;Cl 1Av 12 106;Medellin;Vendedor Zona 3;2023-02-22;2023-03-05;
+;1234752;Cl 3 5 a139;Cali;Vendedor Zona 6;2023-02-24;2023-03-04;Contra Entrega
+Cleinte Prueba 187;1234753;Cl 1Av 12 107;Barranquilla;Vendedor Zona 1;2023-02-24;2023-02-25;Efectivo
+Cleinte Prueba 188;1234754;Cl 3 5 a140;Bucaramanga;Vendedor Zona 7;2023-02-25;2023-02-27;Transferencia
+Cleinte Prueba 189;1234755;Cl 1Av 12 108;Leticia;Vendedor Zona 2;2023-02-23;2023-02-28;Contra Entrega
+Cleinte Prueba 190;1234756;Cl 3 5 a141;Bogota;Vendedor Zona 5;;2013-03-01;
+Cleinte Prueba 191;1234757;Cl 1Av 12 109;Bogota;Vendedor Zona 3;2023-02-24;2023-03-05;Transferencia
+Cleinte Prueba 192;1234758;Cl 3 5 a142;Medellin;Vendedor Zona 6;2023-02-24;2023-03-04;Contra Entrega
+Cleinte Prueba 193;1234759;Cl 1Av 12 110;Cali;Vendedor Zona 1;2023-02-25;2023-02-25;
+Cleinte Prueba 194;1234760;Cl 3 5 a143;Barranquilla;;2023-02-23;2023-02-27;Transferencia
+Cleinte Prueba 195;1234761;Cl 1Av 12 111;Bucaramanga;Vendedor Zona 2;2023-02-22;2023-02-28;Contra Entrega
+Cleinte Prueba 196;1234762;Cl 3 5 a144;Leticia;Vendedor Zona 5;2023-02-24;2013-03-01;Efectivo
+Cleinte Prueba 197;1234763;Cl 1Av 12 112;Bogota;Vendedor Zona 3;2023-02-24;2023-03-05;Transferencia
+Cleinte Prueba 198;1234764;Cl 3 5 a145;Bogota;Vendedor Zona 6;2023-02-25;2023-03-04;Contra Entrega
+;1234765;Cl 1Av 12 113;Medellin;Vendedor Zona 1;2023-02-23;2023-02-25;Efectivo
+Cleinte Prueba 200;1234766;Cl 3 5 a146;Cali;Vendedor Zona 7;2023-02-22;;Transferencia
+Cleinte Prueba 201;1234767;Cl 1Av 12 114;Barranquilla;;;2023-02-28;Contra Entrega
+Cleinte Prueba 202;1234768;Cl 3 5 a147;Bucaramanga;Vendedor Zona 5;2023-02-24;2013-03-01;Efectivo
+Cleinte Prueba 203;1234769;Cl 1Av 12 115;Leticia;Vendedor Zona 3;2023-02-25;2023-03-05;
+Cleinte Prueba 204;1234770;Cl 3 5 a148;Bogota;Vendedor Zona 6;2023-02-23;2023-03-04;Contra Entrega
+Cleinte Prueba 205;1234771;Cl 1Av 12 116;Bogota;Vendedor Zona 1;2023-02-22;2023-02-25;Efectivo
+Cleinte Prueba 206;1234772;Cl 3 5 a149;Medellin;Vendedor Zona 7;2023-02-24;2023-02-27;Transferencia
+Cleinte Prueba 207;1234773;Cl 1Av 12 117;Cali;Vendedor Zona 2;2023-02-24;2023-02-28;Contra Entrega
+Cleinte Prueba 208;1234774;Cl 3 5 a150;Barranquilla;Vendedor Zona 5;;2013-03-01;
+Cleinte Prueba 209;1234775;Cl 1Av 12 118;Bucaramanga;Vendedor Zona 3;2023-02-23;2023-03-05;Transferencia
+Cleinte Prueba 210;1234776;Cl 3 5 a151;Leticia;Vendedor Zona 6;2023-02-22;2023-03-04;Contra Entrega
+Cleinte Prueba 211;1234777;Cl 1Av 12 119;Bogota;Vendedor Zona 1;2023-02-24;2023-02-25;
+Cleinte Prueba 212;1234778;Cl 3 5 a152;Bogota;;2023-02-24;2023-02-27;Transferencia
+Cleinte Prueba 213;1234779;Cl 1Av 12 120;Medellin;Vendedor Zona 2;2023-02-25;2023-02-28;Contra Entrega
+Cleinte Prueba 214;1234780;Cl 3 5 a153;Cali;Vendedor Zona 5;2023-02-23;2013-03-01;Efectivo
+Cleinte Prueba 215;1234781;Cl 1Av 12 121;Barranquilla;Vendedor Zona 3;2023-02-22;2023-03-05;Transferencia
+Cleinte Prueba 216;1234782;Cl 3 5 a154;Bucaramanga;Vendedor Zona 6;2023-02-24;2023-03-04;Contra Entrega
+Cleinte Prueba 217;1234783;Cl 1Av 12 122;Leticia;Vendedor Zona 1;2023-02-24;2023-02-25;Efectivo
+Cleinte Prueba 218;1234784;Cl 3 5 a155;Bogota;Vendedor Zona 7;2023-02-25;;Transferencia
+Cleinte Prueba 219;1234785;Cl 1Av 12 123;Bogota;;2023-02-23;2023-02-28;Contra Entrega
+Cleinte Prueba 220;1234786;Cl 3 5 a156;Medellin;Vendedor Zona 5;2023-02-22;2013-03-01;Efectivo
+Cleinte Prueba 221;1234787;Cl 1Av 12 124;Cali;Vendedor Zona 3;2023-02-24;2023-03-05;
+;1234788;Cl 3 5 a157;Barranquilla;Vendedor Zona 6;2023-02-24;2023-03-04;Contra Entrega
+Cleinte Prueba 223;1234789;Cl 1Av 12 125;Bucaramanga;Vendedor Zona 1;2023-02-25;2023-02-25;Efectivo
+Cleinte Prueba 224;1234790;Cl 3 5 a158;Leticia;Vendedor Zona 7;2023-02-23;2023-02-27;Transferencia
+Cleinte Prueba 225;1234791;Cl 1Av 12 126;Bogota;Vendedor Zona 2;2023-02-22;2023-02-28;Contra Entrega
+Cleinte Prueba 226;1234792;Cl 3 5 a159;Bogota;Vendedor Zona 5;;2013-03-01;Efectivo
+Cleinte Prueba 227;1234793;Cl 1Av 12 127;Medellin;Vendedor Zona 3;2023-02-24;2023-03-05;Transferencia
+Cleinte Prueba 228;1234794;Cl 3 5 a160;Cali;Vendedor Zona 6;2023-02-25;2023-03-04;Contra Entrega
+Cleinte Prueba 229;1234795;Cl 1Av 12 128;Barranquilla;Vendedor Zona 1;2023-02-23;2023-02-25;
+Cleinte Prueba 230;1234796;Cl 3 5 a161;Bucaramanga;;2023-02-22;2023-02-27;Transferencia
+Cleinte Prueba 231;1234797;Cl 1Av 12 129;Leticia;Vendedor Zona 2;2023-02-24;2023-02-28;Contra Entrega
+Cleinte Prueba 232;1234798;Cl 3 5 a162;Bogota;Vendedor Zona 5;2023-02-24;2013-03-01;Efectivo
+Cleinte Prueba 233;1234799;Cl 1Av 12 130;Bogota;Vendedor Zona 3;2023-02-25;2023-03-05;Transferencia
+Cleinte Prueba 234;1234800;Cl 3 5 a163;Medellin;Vendedor Zona 6;2023-02-23;2023-03-04;Contra Entrega
+;1234801;Cl 1Av 12 131;Cali;Vendedor Zona 1;2023-02-22;2023-02-25;Efectivo
+Cleinte Prueba 236;1234802;Cl 3 5 a164;Barranquilla;Vendedor Zona 7;2023-02-24;;Transferencia
+Cleinte Prueba 237;1234803;Cl 1Av 12 132;Bucaramanga;;2023-02-24;2023-02-28;Contra Entrega
+Cleinte Prueba 238;1234804;Cl 3 5 a165;Leticia;Vendedor Zona 5;2023-02-25;2013-03-01;Efectivo
+Cleinte Prueba 239;1234805;Cl 1Av 12 133;Bogota;Vendedor Zona 3;;2023-03-05;
+;1234806;Cl 3 5 a166;Bogota;Vendedor Zona 6;;2023-03-04;Contra Entrega
+Cleinte Prueba 241;1234807;Cl 1Av 12 134;Medellin;Vendedor Zona 1;;2023-02-25;Efectivo
+Cleinte Prueba 242;1234808;Cl 3 5 a167;Cali;Vendedor Zona 7;;2023-02-27;Transferencia
+Cleinte Prueba 243;1234809;Cl 1Av 12 135;Barranquilla;Vendedor Zona 2;2023-02-25;2023-02-28;Contra Entrega
+Cleinte Prueba 244;1234810;Cl 3 5 a168;Bucaramanga;Vendedor Zona 5;;2013-03-01;
+Cleinte Prueba 245;1234811;Cl 1Av 12 136;Leticia;Vendedor Zona 3;;2023-03-05;Transferencia
+Cleinte Prueba 246;1234812;Cl 3 5 a169;Bogota;Vendedor Zona 6;2023-02-24;2023-03-04;Contra Entrega
+Cleinte Prueba 247;1234813;Cl 1Av 12 137;Bogota;Vendedor Zona 1;2023-02-24;2023-02-25;
+Cleinte Prueba 248;1234814;Cl 3 5 a170;Medellin;;2023-02-25;2023-02-27;Transferencia
+Cleinte Prueba 249;1234815;Cl 1Av 12 138;Cali;Vendedor Zona 2;2023-02-23;2023-02-28;Contra Entrega
+Cleinte Prueba 250;1234816;Cl 3 5 a171;Barranquilla;Vendedor Zona 5;2023-02-22;2013-03-01;Efectivo
+Cleinte Prueba 251;1234817;Cl 1Av 12 139;Bucaramanga;Vendedor Zona 3;2023-02-24;2023-03-05;Transferencia
+Cleinte Prueba 252;1234818;Cl 3 5 a172;Leticia;Vendedor Zona 6;2023-02-24;2023-03-04;Contra Entrega
+;1234819;Cl 1Av 12 140;Bogota;Vendedor Zona 1;2023-02-25;2023-02-25;Efectivo
+Cleinte Prueba 254;1234820;Cl 3 5 a173;Bogota;Vendedor Zona 7;2023-02-23;;Transferencia
+Cleinte Prueba 255;1234821;Cl 1Av 12 141;Medellin;;2023-02-22;2023-02-28;Contra Entrega
+Cleinte Prueba 256;1234822;Cl 3 5 a174;Cali;Vendedor Zona 5;2023-02-24;2013-03-01;Efectivo
+Cleinte Prueba 257;1234823;Cl 1Av 12 142;Barranquilla;Vendedor Zona 3;2023-02-24;2023-03-05;
+;1234824;Cl 3 5 a175;Bucaramanga;Vendedor Zona 6;2023-02-25;2023-03-04;Contra Entrega
+Cleinte Prueba 259;1234825;Cl 1Av 12 143;Leticia;Vendedor Zona 1;2023-02-23;2023-02-25;Efectivo
+Cleinte Prueba 260;1234826;Cl 3 5 a176;Bogota;Vendedor Zona 7;2023-02-22;2023-02-27;Transferencia
+Cleinte Prueba 261;1234827;Cl 1Av 12 144;Bogota;Vendedor Zona 2;2023-02-24;2023-02-28;Contra Entrega
+Cleinte Prueba 262;1234828;Cl 3 5 a177;Medellin;Vendedor Zona 5;;2013-03-01;
+Cleinte Prueba 263;1234829;Cl 1Av 12 145;Cali;Vendedor Zona 3;2023-02-25;2023-03-05;Transferencia
+Cleinte Prueba 264;1234830;Cl 3 5 a178;Barranquilla;Vendedor Zona 6;;2023-03-04;Contra Entrega
+Cleinte Prueba 265;1234831;Cl 1Av 12 146;Bucaramanga;Vendedor Zona 1;2023-02-22;2023-02-25;Efectivo
+Cleinte Prueba 266;1234832;Cl 3 5 a179;Leticia;;2023-02-24;2023-02-27;Transferencia
+Cleinte Prueba 267;1234833;Cl 1Av 12 147;Bogota;Vendedor Zona 2;2023-02-24;2023-02-28;Contra Entrega
+Cleinte Prueba 268;1234834;Cl 3 5 a180;Bogota;Vendedor Zona 5;2023-02-25;2013-03-01;Efectivo
+Cleinte Prueba 269;1234835;Cl 1Av 12 148;Medellin;Vendedor Zona 3;2023-02-23;2023-03-05;Transferencia
+Cleinte Prueba 270;1234836;Cl 3 5 a181;Cali;Vendedor Zona 6;2023-02-22;2023-03-04;Contra Entrega
+;1234837;Cl 1Av 12 149;Barranquilla;Vendedor Zona 1;2023-02-24;2023-02-25;Efectivo
+Cleinte Prueba 272;1234838;Cl 3 5 a182;Bucaramanga;Vendedor Zona 7;2023-02-24;;Transferencia
+Cleinte Prueba 273;1234839;Cl 1Av 12 150;Leticia;;2023-02-25;2023-02-28;Contra Entrega
+Cleinte Prueba 274;1234840;Cl 3 5 a183;Bogota;Vendedor Zona 5;2023-02-23;2013-03-01;Efectivo
+Cleinte Prueba 275;1234841;Cl 1Av 12 151;Bogota;Vendedor Zona 3;2023-02-22;2023-03-05;
+;1234842;Cl 3 5 a184;Medellin;Vendedor Zona 6;2023-02-24;2023-03-04;Contra Entrega
+Cleinte Prueba 277;1234843;Cl 1Av 12 152;Cali;Vendedor Zona 1;2023-02-24;2023-02-25;Efectivo
+Cleinte Prueba 278;1234844;Cl 3 5 a185;Barranquilla;Vendedor Zona 7;2023-02-25;2023-02-27;Transferencia
+Cleinte Prueba 279;1234845;Cl 1Av 12 153;Bucaramanga;Vendedor Zona 2;2023-02-23;2023-02-28;Contra Entrega
+Cleinte Prueba 280;1234846;Cl 3 5 a186;Leticia;Vendedor Zona 5;;2013-03-01;
+Cleinte Prueba 281;1234847;Cl 1Av 12 154;Bogota;Vendedor Zona 3;2023-02-24;2023-03-05;Transferencia
+Cleinte Prueba 282;1234848;Cl 3 5 a187;Bogota;Vendedor Zona 6;;2023-03-04;Contra Entrega
+Cleinte Prueba 283;1234849;Cl 1Av 12 155;Medellin;Vendedor Zona 1;2023-02-25;2023-02-25;
+Cleinte Prueba 284;1234850;Cl 3 5 a188;Cali;;2023-02-23;2023-02-27;Transferencia
+Cleinte Prueba 285;1234851;Cl 1Av 12 156;Barranquilla;Vendedor Zona 2;2023-02-22;2023-02-28;Contra Entrega
+Cleinte Prueba 286;1234852;Cl 3 5 a189;Bucaramanga;Vendedor Zona 5;2023-02-24;2013-03-01;Efectivo
+Cleinte Prueba 287;1234853;Cl 1Av 12 157;Leticia;Vendedor Zona 3;2023-02-24;2023-03-05;Transferencia
+Cleinte Prueba 288;1234854;Cl 3 5 a190;Bogota;Vendedor Zona 6;2023-02-25;2023-03-04;Contra Entrega
+;1234855;Cl 1Av 12 158;Bogota;Vendedor Zona 1;2023-02-23;2023-02-25;Efectivo
+Cleinte Prueba 290;1234856;Cl 3 5 a191;Medellin;Vendedor Zona 7;2023-02-22;2023-02-27;Transferencia
+Cleinte Prueba 291;1234857;Cl 1Av 12 159;Cali;;2023-02-24;2023-02-28;Contra Entrega
+Cleinte Prueba 292;1234858;Cl 3 5 a192;Barranquilla;Vendedor Zona 5;2023-02-24;2013-03-01;Efectivo
+Cleinte Prueba 293;1234859;Cl 1Av 12 160;Bucaramanga;Vendedor Zona 3;2023-02-25;2023-03-05;Transferencia
+;1234860;Cl 3 5 a193;Leticia;Vendedor Zona 6;2023-02-23;2023-03-04;Contra Entrega
+Cleinte Prueba 295;1234861;Cl 1Av 12 161;Bogota;Vendedor Zona 1;2023-02-22;2023-02-25;Efectivo
+Cleinte Prueba 296;1234862;Cl 3 5 a194;Bogota;Vendedor Zona 7;2023-02-24;2023-02-27;Transferencia
+Cleinte Prueba 297;1234863;Cl 1Av 12 162;Medellin;Vendedor Zona 2;2023-02-24;2023-02-28;Contra Entrega
+Cleinte Prueba 298;1234864;Cl 3 5 a195;Cali;Vendedor Zona 5;2023-02-25;2013-03-01;
+Cleinte Prueba 299;1234865;Cl 1Av 12 163;Barranquilla;Vendedor Zona 3;2023-02-23;2023-03-05;Transferencia
+Cleinte Prueba 300;1234866;Cl 3 5 a196;Bucaramanga;Vendedor Zona 6;2023-02-22;2023-03-04;Contra Entrega
+Cleinte Prueba 301;1234867;Cl 1Av 12 164;Leticia;Vendedor Zona 1;;2023-02-25;
+Cleinte Prueba 302;1234868;Cl 3 5 a197;Bogota;;2023-02-24;2023-02-27;Transferencia
+Cleinte Prueba 303;1234869;Cl 1Av 12 165;Bogota;Vendedor Zona 2;2023-02-25;2023-02-28;Contra Entrega
+Cleinte Prueba 304;1234870;Cl 3 5 a198;Medellin;Vendedor Zona 5;2023-02-23;2013-03-01;Efectivo
+Cleinte Prueba 305;1234871;Cl 1Av 12 166;Cali;Vendedor Zona 3;2023-02-22;2023-03-05;Transferencia
+Cleinte Prueba 306;1234872;Cl 3 5 a199;Barranquilla;Vendedor Zona 6;2023-02-24;2023-03-04;Contra Entrega
+;1234873;Cl 1Av 12 167;Bucaramanga;Vendedor Zona 1;2023-02-24;2023-02-25;Efectivo
+Cleinte Prueba 308;1234874;Cl 3 5 a200;Leticia;Vendedor Zona 7;2023-02-25;;Transferencia
+Cleinte Prueba 309;1234875;Cl 1Av 12 168;Bogota;;2023-02-23;2023-02-28;Contra Entrega
+Cleinte Prueba 310;1234876;Cl 3 5 a201;Bogota;Vendedor Zona 5;2023-02-22;2013-03-01;Efectivo
+Cleinte Prueba 311;1234877;Cl 1Av 12 169;Medellin;Vendedor Zona 3;2023-02-24;2023-03-05;
+;1234878;Cl 3 5 a202;Cali;Vendedor Zona 6;2023-02-24;2023-03-04;Contra Entrega
+Cleinte Prueba 313;1234879;Cl 1Av 12 170;Barranquilla;Vendedor Zona 1;2023-02-25;2023-02-25;Efectivo
+Cleinte Prueba 314;1234880;Cl 3 5 a203;Bucaramanga;Vendedor Zona 7;2023-02-23;2023-02-27;Transferencia
+Cleinte Prueba 315;1234881;Cl 1Av 12 171;Leticia;Vendedor Zona 2;2023-02-22;2023-02-28;Contra Entrega
+Cleinte Prueba 316;1234882;Cl 3 5 a204;Bogota;Vendedor Zona 5;2023-02-24;2013-03-01;
+Cleinte Prueba 317;1234883;Cl 1Av 12 172;Bogota;Vendedor Zona 3;2023-02-24;2023-03-05;Transferencia
+Cleinte Prueba 318;1234884;Cl 3 5 a205;Medellin;Vendedor Zona 6;2023-02-25;2023-03-04;Contra Entrega
+Cleinte Prueba 319;1234885;Cl 1Av 12 173;Cali;Vendedor Zona 1;2023-02-23;2023-02-25;
+Cleinte Prueba 320;1234886;Cl 3 5 a206;Barranquilla;Vendedor Zona 7;;2023-02-27;Transferencia
+Cleinte Prueba 321;1234887;Cl 1Av 12 174;Bucaramanga;Vendedor Zona 2;2023-02-24;2023-02-28;Contra Entrega
+Cleinte Prueba 322;1234888;Cl 3 5 a207;Leticia;Vendedor Zona 5;2023-02-24;2013-03-01;Efectivo
+Cleinte Prueba 323;1234889;Cl 1Av 12 175;Bogota;Vendedor Zona 3;2023-02-25;2023-03-05;Transferencia
+Cleinte Prueba 324;1234890;Cl 3 5 a208;Bogota;Vendedor Zona 6;2023-02-23;2023-03-04;Contra Entrega
+;1234891;Cl 1Av 12 176;Medellin;Vendedor Zona 1;2023-02-22;2023-02-25;Efectivo
+Cleinte Prueba 326;1234892;Cl 3 5 a209;Cali;Vendedor Zona 7;;2023-02-27;Transferencia
+Cleinte Prueba 327;1234893;Cl 1Av 12 177;Barranquilla;;2023-02-24;2023-02-28;Contra Entrega
+Cleinte Prueba 328;1234894;Cl 3 5 a210;Bucaramanga;Vendedor Zona 5;2023-02-25;;Efectivo
+Cleinte Prueba 329;1234895;Cl 1Av 12 178;Leticia;Vendedor Zona 3;2023-02-23;;
+;1234896;Cl 3 5 a211;Bogota;Vendedor Zona 6;2023-02-22;;Contra Entrega
+Cleinte Prueba 331;1234897;Cl 1Av 12 179;Bogota;Vendedor Zona 1;2023-02-24;2023-02-25;Efectivo
+Cleinte Prueba 332;1234898;Cl 3 5 a212;Medellin;Vendedor Zona 7;2023-02-24;2023-02-27;Transferencia
+Cleinte Prueba 333;1234899;Cl 1Av 12 180;Cali;Vendedor Zona 2;2023-02-25;2023-02-28;Contra Entrega
+Cleinte Prueba 334;1234900;Cl 3 5 a213;Barranquilla;Vendedor Zona 5;2023-02-23;2013-03-01;
+Cleinte Prueba 335;1234901;Cl 1Av 12 181;Bucaramanga;Vendedor Zona 3;2023-02-22;;Transferencia
+Cleinte Prueba 336;1234902;Cl 3 5 a214;Leticia;Vendedor Zona 6;2023-02-24;;Contra Entrega
+Cleinte Prueba 337;1234903;Cl 1Av 12 182;Bogota;Vendedor Zona 1;2023-02-24;2023-02-25;Efectivo
+Cleinte Prueba 338;1234904;Cl 3 5 a215;Bogota;;2023-02-25;2023-02-27;Transferencia
+Cleinte Prueba 339;1234905;Cl 1Av 12 183;Medellin;Vendedor Zona 2;;2023-02-28;Contra Entrega
+Cleinte Prueba 340;1234906;Cl 3 5 a216;Cali;Vendedor Zona 5;2023-02-22;;Efectivo
+Cleinte Prueba 341;1234907;Cl 1Av 12 184;Barranquilla;Vendedor Zona 3;2023-02-24;2023-03-05;Transferencia
+Cleinte Prueba 342;1234908;Cl 3 5 a217;Bucaramanga;Vendedor Zona 6;2023-02-24;;Contra Entrega
+;1234909;Cl 1Av 12 185;Leticia;Vendedor Zona 1;2023-02-25;2023-02-25;Efectivo
+Cleinte Prueba 344;1234910;Cl 3 5 a218;Bogota;Vendedor Zona 7;2023-02-23;2023-02-27;Transferencia
+Cleinte Prueba 345;1234911;Cl 1Av 12 186;Bogota;;2023-02-22;;Contra Entrega
+Cleinte Prueba 346;1234912;Cl 3 5 a219;Medellin;Vendedor Zona 5;2023-02-24;2013-03-01;Efectivo
+Cleinte Prueba 347;1234913;Cl 1Av 12 187;Cali;Vendedor Zona 3;2023-02-24;2023-03-05;
+;1234914;Cl 3 5 a220;Barranquilla;Vendedor Zona 6;2023-02-25;2023-03-04;Contra Entrega
+Cleinte Prueba 349;1234915;Cl 1Av 12 188;Bucaramanga;Vendedor Zona 1;2023-02-23;;Efectivo
+Cleinte Prueba 350;1234916;Cl 3 5 a221;Leticia;Vendedor Zona 7;2023-02-22;2023-02-27;Transferencia
+Cleinte Prueba 351;1234917;Cl 1Av 12 189;Bogota;Vendedor Zona 2;2023-02-24;2023-02-28;Contra Entrega
+Cleinte Prueba 352;1234918;Cl 3 5 a222;Bogota;Vendedor Zona 5;2023-02-24;;
+Cleinte Prueba 353;1234919;Cl 1Av 12 190;Medellin;Vendedor Zona 3;2023-02-25;;Transferencia
+Cleinte Prueba 354;1234920;Cl 3 5 a223;Cali;Vendedor Zona 6;2023-02-23;2023-03-04;Contra Entrega
+Cleinte Prueba 355;1234921;Cl 1Av 12 191;Barranquilla;Vendedor Zona 1;2023-02-22;;
+Cleinte Prueba 356;1234922;Cl 3 5 a224;Bucaramanga;;2023-02-24;2023-02-27;Transferencia
+Cleinte Prueba 357;1234923;Cl 1Av 12 192;Leticia;Vendedor Zona 2;2023-02-24;2023-02-28;Contra Entrega
+Cleinte Prueba 358;1234924;Cl 3 5 a225;Bogota;Vendedor Zona 5;;2013-03-01;
+Cleinte Prueba 359;1234925;Cl 1Av 12 193;Bogota;Vendedor Zona 3;2023-02-23;;Transferencia
+Cleinte Prueba 360;1234926;Cl 3 5 a226;Medellin;Vendedor Zona 6;2023-02-22;;Contra Entrega
+;1234927;Cl 1Av 12 194;Cali;Vendedor Zona 1;2023-02-24;2023-02-25;Efectivo
+Cleinte Prueba 362;1234928;Cl 3 5 a227;Barranquilla;Vendedor Zona 7;2023-02-24;2023-02-27;
+Cleinte Prueba 363;1234929;Cl 1Av 12 195;Bucaramanga;;2023-02-25;;
+Cleinte Prueba 364;1234930;Cl 3 5 a228;Leticia;Vendedor Zona 5;2023-02-23;2013-03-01;Efectivo
+Cleinte Prueba 365;1234931;Cl 1Av 12 196;Bogota;Vendedor Zona 3;2023-02-22;2023-03-05;
+;1234932;Cl 3 5 a229;Bogota;Vendedor Zona 6;2023-02-24;2023-03-04;Contra Entrega
+Cleinte Prueba 367;1234933;Cl 1Av 12 197;Medellin;Vendedor Zona 1;2023-02-24;;
+Cleinte Prueba 368;1234934;Cl 3 5 a230;Cali;Vendedor Zona 7;2023-02-25;2023-02-27;Transferencia
+Cleinte Prueba 369;1234935;Cl 1Av 12 198;Barranquilla;Vendedor Zona 2;2023-02-23;2023-02-28;
+Cleinte Prueba 370;1234936;Cl 3 5 a231;Bucaramanga;Vendedor Zona 5;2023-02-22;2013-03-01;Efectivo
+Cleinte Prueba 371;1234937;Cl 1Av 12 199;Leticia;Vendedor Zona 3;2023-02-24;;Transferencia
+Cleinte Prueba 372;1234938;Cl 3 5 a232;Bogota;Vendedor Zona 6;2023-02-24;;Contra Entrega
