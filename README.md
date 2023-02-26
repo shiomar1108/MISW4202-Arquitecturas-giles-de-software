@@ -22,3 +22,15 @@ Desde la raiz del proyecto, se debe ejecutar en una terminal el siguiente comand
 
 
 ### Registro de Ventas
+
+## Ejecución de Pruebas:
+Ubicacion:  MISW4202-11-Equipo1/Jmeter
+
+Requisitos:
+* apache-jmeter-5.3
+* java version "1.8.0_101"
+
+Archivos Requeridos:
+* Experimento.jmx
+* DatosPruebas.csv
+* DatosPruebas2.csv
