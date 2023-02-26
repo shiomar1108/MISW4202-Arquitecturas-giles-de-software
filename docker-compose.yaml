@@ -1,9 +1,9 @@
 version: "3.2"
 services:
   redis:
-    image: redis
-    volumes: 
-      - ./redis:/data
+    image: 'redis:4-alpine'
+    ports:
+      - '6379:6379'
 
   mcs_ventas_01:
     image: mcs_ventas:latest
@@ -11,7 +11,7 @@ services:
         - ./ventas/:/mnt/
     build: ./ventas
     working_dir: /backend/
-    command: python api_commands.py
+    command: python base.py
     depends_on: 
       - redis
 
@@ -21,7 +21,7 @@ services:
         - ./ventas/:/mnt/
     build: ./ventas
     working_dir: /backend/
-    command: python api_commands.py
+    command: python base.py
     depends_on: 
       - redis
 
@@ -31,7 +31,7 @@ services:
         - ./ventas/:/mnt/
     build: ./ventas
     working_dir: /backend/
-    command: python api_commands.py
+    command: python base.py
     depends_on: 
       - redis
 
@@ -41,7 +41,7 @@ services:
         - ./registroVentas/:/mnt/
     build: ./registroVentas
     working_dir: /backend/
-    command: python api_commands.py
+    command: python base.py
     depends_on: 
       - redis
 

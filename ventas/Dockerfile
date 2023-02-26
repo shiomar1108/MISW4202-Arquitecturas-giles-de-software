@@ -19,4 +19,4 @@ COPY . .
 EXPOSE 5000
 
 # Run the executable
-CMD ["python", "api_commands.py"]
+CMD ["python", "base.py", "--host", "0.0.0.0"]
