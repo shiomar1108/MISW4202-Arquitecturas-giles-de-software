@@ -1,37 +1,37 @@
-endpoint = localhost:8080
-url: cpp/ventas
+URL de consumo = http://backend_balancer:8080/cpp/ventas
+
 {
-	"cliente": String(Autocompletar),
-	"clienteID": number,
-	"direccion"" string,
-	"ciudad": String(Autocompletar),
-	"vendedor": string(Autocompletar),
-	"fechaPedido": string(Autocompletar),
-	"fechaEntrega": String(Autocompletar),
-	"metodoPago": String(Autocompletar),
-	"productos": 
-	[
-	{
-		"productoID" : number,
-		"cantidad": number
-		"costo": number
-	}
-	{
-		"productoID" : number,
-		"cantidad": number
-		"costo": number
-	}
-	{
-		"productoID" : number,
-		"cantidad": number
-		"costo": number
-	}
-	]
+   "cliente":"prueba (Autocompletar)",
+   "clienteID":1281928192,
+   "direccion":"direccion prueba",
+   "ciudad":"Bogota",
+   "vendedor":"Vendedor prueba (Autocompletar)",
+   "fechaPedido":"2023-02-18 (Autocompletar)",
+   "fechaEntrega":"2023-02-18 (Autocompletar)",
+   "metodoPago":"Tarjeta Credito (Autocompletar)",
+   "productos":[
+      {
+         "productoID":10000001,
+         "cantidad":10,
+         "costo":58900.90
+      },
+      {
+         "productoID":10000002,
+         "cantidad":60,
+         "costo":34600.20
+      },
+      {
+         "productoID":10000003,
+         "cantidad":10,
+         "costo":12456.30
+      }
+   ]
 }
 
 Respuesta:
+
 {
-	"HTTPCode": 200,
-	"IP":XXXXX
+    "HTTPCode": 200,
+    "IP": "172.23.0.6"
 }
 
