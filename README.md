@@ -90,3 +90,5 @@ Cola de mensajería utilizada persistir la información. Esta cola es utilizada 
 -	Microservicio de Ventas: es el **publicador** y se encarga de enviar la información ya validada y autocompleta hacia la cola de Redis
 -	Microservicio de Registro de Ventas: es el **suscriptor** y se encarga de desencolar la información de la cola de Redis.
 
+## Demostración ejecución pruebas
+Se comparte el siguiente enlace donde se evidencia la ejecución de los casos de prueba y el análisis de cada uno: https://youtu.be/yR7UWRQSTDc
