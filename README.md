@@ -31,7 +31,10 @@ Este experimento tiene como propósito comprobar las siguientes tácticas de arq
   - **Instalación de docker en Windows**: https://docs.docker.com/desktop/install/windows-install
   - **Instalación de docker en Linux Ubuntu**: https://docs.docker.com/engine/install/ubuntu
   - **Instalación de docker en Mac**: https://docs.docker.com/desktop/install/mac-install
-- Para realizar las pruebas se debe instalar **JMeter**. Se comparte el siguiente enlace https://www.simplilearn.com/tutorials/jmeter-tutorial/jmeter-installation
+- Para realizar las pruebas se debe instalar **JMeter**. 
+  - Versión: `apache-jmeter-5.3`
+  - Versión JAVA: `1.8.0_101`
+  - Se comparte el siguiente enlace https://www.simplilearn.com/tutorials/jmeter-tutorial/jmeter-installation
 - Se debe clonar el proyecto **MISW4202-11-Equipo1**: https://github.com/shiomar-salazar/MISW4202-11-Equipo1
 
 ## Ejecución:
@@ -40,6 +43,24 @@ Este experimento tiene como propósito comprobar las siguientes tácticas de arq
   - Desde la raiz del proyecto, se debe ejecutar en una terminal el siguiente comando **`docker compose up`** para que docker a través del archivo **`docker-compose.yaml`** realice la creación de las imagenes y el despliegue de los contenedores.
   
   ![image](https://user-images.githubusercontent.com/110913673/221440046-95944fa5-8c79-4daf-a112-64707d177d8e.png)
+
+- **JMeter**:
+
+Ir a la carpeta **`bin`** donde se instalo JMeter y ejecutar el archivo **`jmeter.bat`**.
+
+![image](https://user-images.githubusercontent.com/110913673/221445381-c93eefe5-b9c1-40eb-9d31-daf2de0bcacc.png)
+
+Una vez abierto JMeter ir a **`File`** -> **`Open`**.
+
+![image](https://user-images.githubusercontent.com/110913673/221445579-d0d7dd73-03d1-4ac6-908c-e716b8ea956d.png)
+
+Seleccionamos el archivo **`Experimento.jmx`** que se encuentra en la ruta **`MISW4202-11-Equipo1/Jmeter`**.
+
+![image](https://user-images.githubusercontent.com/110913673/221445834-259d2259-782b-4449-a956-eae8af41a048.png)
+
+Por ultimo se ejecuta las pruebas.
+
+![image](https://user-images.githubusercontent.com/110913673/221446161-bda2d2ba-2fe6-41cb-9c9e-6338cac4f3d5.png)
 
 
 ## Descripcion de los componentes que hacen parte del experimento:
