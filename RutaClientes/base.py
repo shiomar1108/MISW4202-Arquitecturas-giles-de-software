@@ -12,11 +12,15 @@ from flask_jwt_extended import JWTManager
 class RutaClientes(Resource):
     @jwt_required()
     def get(self, id_repartidor):
+        headers = {'Authorization': request.headers['Authorization']}
+        user = requests.get(f"http://localhost:5000/cpp/users/{request.json['user']}", headers=headers)
         hostIp = socket.gethostbyname(socket.gethostname())
-        if id_repartidor == 1:
+        if user.status_code==200 and id_repartidor == 1:
             response = {
                 "HTTPCode": 200,
                 "IP": hostIp,
+                "user": request.json['user'],
+                "id_repartidor": 1,
                 "RutaEntrega": {
                     "Cliente1": "Tienda de Pedro",
                     "Direccion1": "Santa Fe, Bogota",
@@ -52,4 +56,4 @@ api.add_resource(RutaClientes, "/cpp/RutaClientes/<int:id_repartidor>")
 
 # Agregamos el recurso que expone la funcionalidad ventas
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0")
+    app.run(debug=True, host='localhost',port=8080)
