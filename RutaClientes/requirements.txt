@@ -1,0 +1,13 @@
+colorama
+Flask
+Flask-Cors
+flask-marshmallow
+Flask-RESTful
+Flask-SQLAlchemy
+itsdangerous
+Jinja2
+marshmallow
+requests
+rq
+Werkzeug
+flask_jwt_extended
