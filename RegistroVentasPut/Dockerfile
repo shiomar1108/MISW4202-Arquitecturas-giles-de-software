@@ -23,4 +23,4 @@ COPY . .
 EXPOSE 5000
 
 # Run the executable
-CMD ["python", "app.py", "--host", "0.0.0.0"]
+CMD ["python", "base.py", "--host", "0.0.0.0"]

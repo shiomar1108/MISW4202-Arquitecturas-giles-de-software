@@ -1,0 +1,145 @@
+{
+    "users": [
+        {
+            "name": "AdminUser",
+            "password_hash": "vf3LQMozyUlksbVdDw08ia1kbuxhTRSvuUVQ7K1+WifcGOi5",
+            "hashing_algorithm": "rabbit_password_hashing_sha256",
+            "tags": "administrator"
+        },
+        {
+            "name": "CreateUserOrder",
+            "password_hash": "P7AJtS/VqSldieH/PKChfimblGsDir+FKQha7mi331oZ263X",
+            "hashing_algorithm": "rabbit_password_hashing_sha256",
+            "tags": "administrator"
+        },
+        {
+            "name": "UpdateUserOrder",
+            "password_hash": "ewIOcGWHKI3fIX5T9pIcDm4/W5K8j1fETWyhdZGo18LL+j9X",
+            "hashing_algorithm": "rabbit_password_hashing_sha256",
+            "tags": "administrator"
+        }
+    ],
+    "vhosts": [
+        {
+            "name": "/"
+        },
+        {
+            "name": "create_orders_vhost"
+        },
+        {
+            "name": "update_orders_vhost"
+        }
+    ],
+    "permissions": [
+        {
+            "user": "AdminUser",
+            "vhost": "/",
+            "configure": ".*",
+            "write": ".*",
+            "read": ".*"
+        },
+        {
+            "user": "AdminUser",
+            "vhost": "create_orders_vhost",
+            "configure": ".*",
+            "write": ".*",
+            "read": ".*"
+        },
+        {
+            "user": "AdminUser",
+            "vhost": "update_orders_vhost",
+            "configure": ".*",
+            "write": ".*",
+            "read": ".*"
+        },
+        {
+            "user": "CreateUserOrder",
+            "vhost": "create_orders_vhost",
+            "configure": ".*",
+            "write": ".*",
+            "read": ".*"
+        },
+        {
+            "user": "UpdateUserOrder",
+            "vhost": "update_orders_vhost",
+            "configure": ".*",
+            "write": ".*",
+            "read": ".*"
+        }
+    ],
+    "parameters": [],
+    "policies": [
+        {
+            "vhost": "/",
+            "name": "ha",
+            "pattern": "",
+            "apply-to": "all",
+            "definition": {
+                "ha-mode": "all",
+                "ha-sync-batch-size": 256,
+                "ha-sync-mode": "automatic"
+            },
+            "priority": 0
+        }
+    ],
+    "queues": [
+        {
+            "name": "job-import.triggered.queue",
+            "vhost": "/",
+            "durable": true,
+            "auto_delete": false,
+            "arguments": {}
+        },
+        {
+            "name": "post_orders_queue",
+            "vhost": "create_orders_vhost",
+            "durable": true,
+            "auto_delete": false,
+            "arguments": {}
+        },
+        {
+            "name": "put_orders_queue",
+            "vhost": "update_orders_vhost",
+            "durable": true,
+            "auto_delete": false,
+            "arguments": {}
+        }
+    ],
+    "exchanges": [
+        {
+            "name": "lob-proj-dx",
+            "vhost": "/",
+            "type": "direct",
+            "durable": true,
+            "auto_delete": false,
+            "internal": false,
+            "arguments": {}
+        }
+    ],
+    "bindings": [
+        {
+            "source": "lob-proj-dx",
+            "vhost": "/",
+            "destination": "job-import.triggered.queue",
+            "destination_type": "queue",
+            "routing_key": "job-import.event.triggered",
+            "arguments": {}
+        },
+        {
+            "source": "amq.direct",
+            "vhost": "create_orders_vhost",
+            "destination": "post_orders_queue",
+            "destination_type": "queue",
+            "routing_key": "post_orders_queue",
+            "arguments": {}
+        },
+        {
+            "source": "amq.direct",
+            "vhost": "update_orders_vhost",
+            "destination": "put_orders_queue",
+            "destination_type": "queue",
+            "routing_key": "put_orders_queue",
+            "arguments": {}
+        }
+    ]
+}

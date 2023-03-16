@@ -1,0 +1,12 @@
+[
+    {"id":1,"cliente":"prueba No 1","clienteID":1281928192,"direccion":"direccion prueba No 1","ciudad":"Bogota","vendedor":"Jose Guillermo","fechaPedido":"2023-02-18","fechaEntrega":"2023-02-18","metodoPago":"Efectivo"},
+    {"id":2,"cliente":"prueba No 2","clienteID":3453453453,"direccion":"direccion prueba No 2","ciudad":"Bogota","vendedor":"Pedro Salazar","fechaPedido":"2023-02-18","fechaEntrega":"2023-02-18","metodoPago":"Tarjeta Credito"},
+    {"id":3,"cliente":"prueba No 3","clienteID":1281928192,"direccion":"direccion prueba No 3","ciudad":"Medellin","vendedor":"Jose Guillermo","fechaPedido":"2023-02-19","fechaEntrega":"2023-02-19","metodoPago":"Tarjeta Credito"},
+    {"id":4,"cliente":"prueba No 4","clienteID":5654576456,"direccion":"direccion prueba No 4","ciudad":"Bogota","vendedor":"Maria Pedraza","fechaPedido":"2023-02-19","fechaEntrega":"2023-02-19","metodoPago":"Tarjeta Credito"},
+    {"id":5,"cliente":"prueba No 5","clienteID":5654576456,"direccion":"direccion prueba No 5","ciudad":"Bogota","vendedor":"Maria Pedraza","fechaPedido":"2023-02-20","fechaEntrega":"2023-02-20","metodoPago":"Efectivo"},
+    {"id":6,"cliente":"prueba No 6","clienteID":1281928192,"direccion":"direccion prueba No 6","ciudad":"Bogota","vendedor":"Jose Guillermo","fechaPedido":"2023-02-20","fechaEntrega":"2023-02-20","metodoPago":"Tarjeta Credito"},
+    {"id":7,"cliente":"prueba No 7","clienteID":1281928192,"direccion":"direccion prueba No 7","ciudad":"Medellin","vendedor":"Jose Guillermo","fechaPedido":"2023-02-21","fechaEntrega":"2023-02-21","metodoPago":"Efectivo"},
+    {"id":8,"cliente":"prueba No 8","clienteID":3453453453,"direccion":"direccion prueba No 8","ciudad":"Bogota","vendedor":"Pedro Salazar","fechaPedido":"2023-02-21","fechaEntrega":"2023-02-21","metodoPago":"Tarjeta Credito"},
+    {"id":9,"cliente":"prueba No 9","clienteID":5654576456,"direccion":"direccion prueba No 9","ciudad":"Medellin","vendedor":"Maria Pedraza","fechaPedido":"2023-02-22","fechaEntrega":"2023-02-22","metodoPago":"Tarjeta Credito"},
+    {"id":10,"cliente":"prueba No 10","clienteID":3453453453,"direccion":"direccion prueba No 10","ciudad":"Bogota","vendedor":"Pedro Salazar","fechaPedido":"2023-03-15","fechaEntrega":"2023-03-15","metodoPago":"Efectivo"}
+]
