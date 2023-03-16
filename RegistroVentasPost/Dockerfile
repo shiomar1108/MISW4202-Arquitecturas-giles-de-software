@@ -3,7 +3,11 @@ FROM python:3.8-alpine
 
 # Adding git, bash and openssh to the image
 RUN apk update && apk upgrade && \
-    apk add --no-cache bash git openssh
+    apk add --no-cache bash git openssh \
+    python3-dev \
+    gcc \
+    libc-dev \
+    libffi-dev
 
 # Make dir app
 RUN mkdir /backend

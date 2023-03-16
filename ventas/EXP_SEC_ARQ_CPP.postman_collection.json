@@ -1,0 +1,250 @@
+{
+	"info": {
+		"_postman_id": "d73f73c4-d509-4bba-ab0f-2eb51abeceb5",
+		"name": "EXP_SEC_ARQ_CPP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5238096"
+	},
+	"item": [
+		{
+			"name": "Seguridad",
+			"item": [
+				{
+					"name": "crearOrdenVenta",
+					"item": [
+						{
+							"name": "crearOrden_JWT",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{jwt}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"cliente\":\"prueba No 14\",\r\n   \"clienteID\":1281928192,\r\n   \"direccion\":\"direccion prueba No 4\",\r\n   \"ciudad\":\"Bogota\",\r\n   \"vendedor\":\"Vendedor prueba\",\r\n   \"fechaPedido\":\"2023-02-18\",\r\n   \"fechaEntrega\":\"2023-02-18\",\r\n   \"metodoPago\":\"Tarjeta Credito\",\r\n   \"productos\":[\r\n      {\r\n         \"productoID\":10000001,\r\n         \"cantidad\":10,\r\n         \"costo\":58900.90\r\n      },\r\n      {\r\n         \"productoID\":10000002,\r\n         \"cantidad\":60,\r\n         \"costo\":34600.20\r\n      },\r\n      {\r\n         \"productoID\":10000003,\r\n         \"cantidad\":10,\r\n         \"costo\":12456.30\r\n      }\r\n   ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/cpp/ventas",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"cpp",
+										"ventas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "crearOrden_NO_JWT",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"cliente\":\"prueba No 14\",\r\n   \"clienteID\":1281928192,\r\n   \"direccion\":\"direccion prueba No 4\",\r\n   \"ciudad\":\"Bogota\",\r\n   \"vendedor\":\"Vendedor prueba\",\r\n   \"fechaPedido\":\"2023-02-18\",\r\n   \"fechaEntrega\":\"2023-02-18\",\r\n   \"metodoPago\":\"Tarjeta Credito\",\r\n   \"productos\":[\r\n      {\r\n         \"productoID\":10000001,\r\n         \"cantidad\":10,\r\n         \"costo\":58900.90\r\n      },\r\n      {\r\n         \"productoID\":10000002,\r\n         \"cantidad\":60,\r\n         \"costo\":34600.20\r\n      },\r\n      {\r\n         \"productoID\":10000003,\r\n         \"cantidad\":10,\r\n         \"costo\":12456.30\r\n      }\r\n   ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/cpp/ventas",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"cpp",
+										"ventas"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "actualizarOrdenVenta",
+					"item": [
+						{
+							"name": "actualizarOrdenExistente_JWT",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{jwt}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"cliente\":\"prueba No 6\",\r\n   \"clienteID\":1281928192,\r\n   \"direccion\":\"direccion prueba No 4\",\r\n   \"ciudad\":\"Bogota\",\r\n   \"vendedor\":\"Vendedor prueba\",\r\n   \"fechaPedido\":\"2023-02-18\",\r\n   \"fechaEntrega\":\"2023-02-18\",\r\n   \"metodoPago\":\"Tarjeta Credito\",\r\n   \"productos\":[\r\n      {\r\n         \"productoID\":10000001,\r\n         \"cantidad\":10,\r\n         \"costo\":58900.90\r\n      },\r\n      {\r\n         \"productoID\":10000002,\r\n         \"cantidad\":60,\r\n         \"costo\":34600.20\r\n      },\r\n      {\r\n         \"productoID\":10000003,\r\n         \"cantidad\":10,\r\n         \"costo\":12456.30\r\n      }\r\n   ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/cpp/ventas/10",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"cpp",
+										"ventas",
+										"10"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "actualizarOrdenNoExistente_JWT",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{jwt}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"cliente\":\"prueba No 6\",\r\n   \"clienteID\":1281928192,\r\n   \"direccion\":\"direccion prueba No 4\",\r\n   \"ciudad\":\"Bogota\",\r\n   \"vendedor\":\"Vendedor prueba\",\r\n   \"fechaPedido\":\"2023-02-18\",\r\n   \"fechaEntrega\":\"2023-02-18\",\r\n   \"metodoPago\":\"Tarjeta Credito\",\r\n   \"productos\":[\r\n      {\r\n         \"productoID\":10000001,\r\n         \"cantidad\":10,\r\n         \"costo\":58900.90\r\n      },\r\n      {\r\n         \"productoID\":10000002,\r\n         \"cantidad\":60,\r\n         \"costo\":34600.20\r\n      },\r\n      {\r\n         \"productoID\":10000003,\r\n         \"cantidad\":10,\r\n         \"costo\":12456.30\r\n      }\r\n   ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/cpp/ventas/100",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"cpp",
+										"ventas",
+										"100"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "actualizarOrden_NO_JWT",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{jwt}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"cliente\":\"prueba No 6\",\r\n   \"clienteID\":1281928192,\r\n   \"direccion\":\"direccion prueba No 4\",\r\n   \"ciudad\":\"Bogota\",\r\n   \"vendedor\":\"Vendedor prueba\",\r\n   \"fechaPedido\":\"2023-02-18\",\r\n   \"fechaEntrega\":\"2023-02-18\",\r\n   \"metodoPago\":\"Tarjeta Credito\",\r\n   \"productos\":[\r\n      {\r\n         \"productoID\":10000001,\r\n         \"cantidad\":10,\r\n         \"costo\":58900.90\r\n      },\r\n      {\r\n         \"productoID\":10000002,\r\n         \"cantidad\":60,\r\n         \"costo\":34600.20\r\n      },\r\n      {\r\n         \"productoID\":10000003,\r\n         \"cantidad\":10,\r\n         \"costo\":12456.30\r\n      }\r\n   ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/cpp/ventas/10",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"cpp",
+										"ventas",
+										"10"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "http://127.0.0.1:5000",
+			"type": "string",
+			"disabled": true
+		},
+		{
+			"key": "host",
+			"value": "http://localhost:8080",
+			"type": "string"
+		},
+		{
+			"key": "host",
+			"value": "http://localhost:8000",
+			"type": "string",
+			"disabled": true
+		},
+		{
+			"key": "jwt",
+			"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3ODg5MzIxNSwianRpIjoiMTUyY2U0NjktODY3MC00MDUzLWI5ZWEtMjJiNmI0ZjNkNDEzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6InRlc3QiLCJuYmYiOjE2Nzg4OTMyMTV9.CzKxNINg_xHfciG-4ykEcRSe9PaqdcVUKdjSWRhrw90",
+			"type": "string"
+		}
+	]
+}
