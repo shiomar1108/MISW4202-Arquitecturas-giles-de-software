@@ -147,7 +147,7 @@ class ActualizarOrdenResource(Resource):
 app = Flask(__name__)
 cors = CORS(app)
 app.config['PROPAGATE_EXCEPTIONS'] = True
-app.config["JWT_SECRET_KEY"] = "secret-jwt"
+app.config["JWT_SECRET_KEY"] = "JwBGj2B4XFAKhYmn8Pgk0vH2w7UvgYfXAJ32e5rs8vI="
 app_context = app.app_context()
 app_context.push()
 jwt = JWTManager(app)
