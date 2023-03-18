@@ -77,7 +77,7 @@ def send_message(host, vhost, user, password, queue, message):
 # Clase con la logica de negocio
 class RegistrarOrdenResource(Resource):
 
-    @jwt_required()
+    #@jwt_required()
     def post(self):
         response = None
         try:
@@ -110,7 +110,7 @@ class RegistrarOrdenResource(Resource):
             return response, 500
         
 class ActualizarOrdenResource(Resource):
-    @jwt_required()
+    #@jwt_required()
     def put(self, orden_id):
         try:
             # Se obtiene el request
