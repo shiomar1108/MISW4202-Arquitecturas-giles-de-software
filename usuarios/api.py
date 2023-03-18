@@ -50,7 +50,7 @@ db.init_app(app)
 db.create_all()
 
 class UserListResource(Resource):
-    @jwt_required()
+    
     def get(self):
         posts = User.query.all()
         return users_schema.dump(posts)
@@ -68,7 +68,7 @@ class UserListResource(Resource):
 
 
 class UserResource(Resource):
-    @jwt_required()
+    #@jwt_required()
     def get(self, user_id):
         user = User.query.get_or_404(user_id)
         return user_schema.dump(user)
@@ -87,4 +87,4 @@ api.add_resource(UserResource, '/cpp/users/<int:user_id>')
 api.add_resource(UserLogIn, '/cpp/logIn')
 
 if __name__ == '__main__':
-    app.run(debug=True, host='localhost',port=5000)
+    app.run(debug=True,host='0.0.0.0',port=6600)
