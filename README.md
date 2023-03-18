@@ -133,3 +133,45 @@ Este experimento tiene como propósito comprobar las siguientes tácticas  de ar
   
 - **Docker**:
   - Desde la raiz del proyecto, se debe ejecutar en una terminal el siguiente comando **`docker compose up`** para que docker a través del archivo **`docker-compose.yaml`** realice la creación de las imagenes y el despliegue de los contenedores.
+
+  
+  ![image](https://user-images.githubusercontent.com/110913673/221440046-95944fa5-8c79-4daf-a112-64707d177d8e.png)
+
+
+
+## Descripcion de los componentes que hacen parte del experimento:
+
+### Microservicio de Ventas
+El microservicio de Venta es el encargado de procesar las ordenes de ventas que realizan los vendedores a los clientes, de igual forma este microservicio debe recibir y encolar las solicitudes de edición de registros de ventas.
+Se espera que este microservicio valide la información ingresada por los vendedores tales como ID del Cliente, dirección, Productos y cantidad de productos, y emita la información al Microservicio de Registro de Venta.
+Así mismo se espera que este microservicio valide la existencia de un registro de venta antes de encolar las solicitudes de edición de orden de venta.
+
+### Microservicio de Registro de la Venta
+El microservicio de Registro de Venta es el encargado de guardar en la base de datos las ordenes procesadas y validadas por el microservicio de ventas, además debe ser capaz de procesar las ordenes de edición provenientes del microservicio de ventas.
+Se espera que este microservicio tome los mensajes de la plataforma de mensajería y sea capaz guardar de forma correcta la información en la base de datos correspondiente.
+De igual forma se espera que microservicio de Registro de Venta tome las solicitudes de edición de registros de venta y los aplique a los registros previamente creados.
+
+### Microservicio ruta de clientes
+El microservicio de Ruta Cliente es el encargado de regresar una lista de clientes que se deben visitar según el repartidor que ingrese al sistema.
+Se espero que este microservicio muestre solo la información de los conductores autenticados y prevenga cualquier consulta que no provenga de un usuario conductores.
+
+### ApiGateway KrakenD
+El Apigateway es un componente dentro de la arquitectura estilo microservicios que tiene varias funciones, entre ellas las siguientes:
+- Proveer un solo punto de acceso a las APIs y que estas no sean uasadas directamentes por los consumidores.
+- Proveer mecanismos de filtrados de Ips, Autenticación  de las Apis expuestas.
+- Balancear las cargas dentre las diferentes instancias de los microservicios creados.
+- Generar metricas y registro de logs de todos los accesos de las aplicaciones.
+en la siguiente imagen se muestra un conjunto de aplicaciones de terceros que se pueden usar en conjunto con KrakenD
+
+![image](https://user-images.githubusercontent.com/65821560/226144810-2bf0d440-1e32-4e34-9c85-b7916b77cf8a.png)
+
+
+
+### Proveed de Seguridad Auth0
+Auth0 es una plataforma de gestión de identidades basada en la nube que está diseñada para ayudar a las empresas de diversos sectores, como finanzas, salud, medios de comunicación, comercio minorista y turismo, a gestionar de forma segura las actividades de autenticacion, autorizacion,  inicio de sesión, los perfiles de usuario y las credenciales.
+
+En la siguiente imagen se ilustra el flujo de autenticación usando Auth0 y Krakend.
+![image](https://user-images.githubusercontent.com/65821560/226144881-7211a277-c34f-4a87-a2b4-1008e5fb6816.png)
+
+
+## Demostración ejecución pruebas
