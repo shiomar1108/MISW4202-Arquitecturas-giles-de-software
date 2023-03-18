@@ -92,3 +92,44 @@ Cola de mensajería utilizada persistir la información. Esta cola es utilizada 
 
 ## Demostración ejecución pruebas
 Se comparte el siguiente enlace donde se evidencia la ejecución de los casos de prueba y el análisis de cada uno: https://youtu.be/yR7UWRQSTDc
+
+
+
+# CPP Experimento de Arquitectura 2
+
+## Integrantes:
+
+|   Nombre                         |   Correo                    |
+|----------------------------------|-----------------------------|
+| Jhon Fredy Guzmán Caicedo        | jf.guzmanc1@uniandes.edu.co |
+| Haiber Humberto Galindo Sanchez  | h.galindos@uniandes.edu.co  |
+| Oscar Uriel Tobar Rios           | o.tobar@uniandes.edu.co     |
+| Shiomar Alberto Salazar Castillo | s.salazarc@uniandes.edu.co  |
+
+## Propósito del experimento:
+Este experimento tiene como propósito comprobar las siguientes tácticas  de arquitectura basados en la familia de resistir ataques y recuperacion de ataques mejoraremos la seguridad de nuestra aplicación.
+* Reduccion de Superficie de Ataque: mediante el uso del ApiGateway Krakend se dara solo un punto de acceso a las APIs construidas.
+* Autenticar Actores: Mediante el uso de Tokens de acceso controlados por un tercero con la plataforma de Atuh0 se permitira autenticarse en nuestras APIs para poderlas consumir.
+* Autorizar Actores: Mediante el uso de perfiles se limitara el acceso a funcionalidades dentro de las APIS.
+* Manejo de logs de eventos: los Microservicios y el apigateway contaran con logs paraidentificar las transacciones entrantes a nuestras APIS.
+
+
+
+## Historias de arquitecturas seleccionadas
+* Como empleado de Marketing y Ventas cuando genere una orden de venta dado que el sistema opera normalmente quiero ser el único que pueda realizar alguna modificación en dicha orden para garantizar que quien genero la orden inicial es quien puede modificarla y no alguien más. Esto debe suceder 100% de las veces.
+* Como Transportista cuando existan ingresos al sistema dado que el sistema opera normalmente quiero que se garantice que el ingreso al sistema haya sido autorizado por mi mismo para garantizar que si sea yo el que hace los movimientos en la plataforma. Esto debe suceder el 100% de las veces.
+
+
+## Puntos de sensibilidad del experimento
+* Garantizar que al 100 % de las peticiones realizadas sea validado el acceso y rol  del consumidor  y que solo pueda realizar acciones permitidas acorde a su rol
+* Garantizar que al 100 % de las peticiones realizadas sea validado el acceso desde terminales autorizadas al microservicio y registrar en logs todas las transacciones realizadas
+
+## Instalación de componentes:
+- En primera instancia se debe tener instalado **Docker**. Para esto se comparten los siguientes enlaces:
+  - **Instalación de docker en Windows**: https://docs.docker.com/desktop/install/windows-install
+  - **Instalación de docker en Linux Ubuntu**: https://docs.docker.com/engine/install/ubuntu
+  - **Instalación de docker en Mac**: https://docs.docker.
+  - Se debe clonar el proyecto **MISW4202-11-Equipo1**: https://github.com/shiomar-salazar/MISW4202-11-Equipo1
+  
+- **Docker**:
+  - Desde la raiz del proyecto, se debe ejecutar en una terminal el siguiente comando **`docker compose up`** para que docker a través del archivo **`docker-compose.yaml`** realice la creación de las imagenes y el despliegue de los contenedores.
