@@ -88,6 +88,7 @@
       "backend": [
         {
           "url_pattern": "/cpp/ventas/{id}",
+          "encoding": "json",
           "host": [
             "http://mcs_ventas:5000"
           ]
@@ -125,7 +126,7 @@
               "172.10.10.1"
             ]
           }
-        }
+        }        
       },
       "backend": [        
         {
@@ -377,6 +378,9 @@
           "172.10.10.1"
         ]
       }
+    },    
+    "router": {
+      "return_error_msg": true
     }    
   },
   "plugin": {

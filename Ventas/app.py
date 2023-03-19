@@ -12,7 +12,6 @@ from jproperties import Properties
 from datetime import datetime
 from flask_jwt_extended import JWTManager, jwt_required
 
-
 # Function to registry log
 def registry_log(file, severity, request, response):
     with open(file, 'a') as file:
@@ -107,7 +106,7 @@ class RegistrarOrdenResource(Resource):
             }
             registry_log('log_transactions_post.txt', 'ERROR',
                          json.dumps(orden), json.dumps(response))
-            return response, 500
+            return response, 200
         
 class ActualizarOrdenResource(Resource):
     #@jwt_required()
@@ -140,14 +139,13 @@ class ActualizarOrdenResource(Resource):
             }
             registry_log('log_transactions_put.txt', 'ERROR',
                          json.dumps(orden), json.dumps(response))
-            return response, 500
+            return response, 200
 
 
 # Configuración Flask
 app = Flask(__name__)
 cors = CORS(app)
 app.config['PROPAGATE_EXCEPTIONS'] = True
-#app.config["JWT_SECRET_KEY"] = "JwBGj2B4XFAKhYmn8Pgk0vH2w7UvgYfXAJ32e5rs8vI="
 app.config["JWT_SECRET_KEY"] = "GrkIDwv8flT3tkC8pxRQOLcELnfyx4o2tN5lJXqQabvHMzcPSwGypsinRDma2UXz"
 app_context = app.app_context()
 app_context.push()
