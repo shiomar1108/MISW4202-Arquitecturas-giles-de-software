@@ -2,7 +2,7 @@ import json
 import sys
 import traceback
 from flask_restful import Resource
-from flask import request
+from flask import request, abort
 from flask import Flask
 from flask_cors import CORS
 from flask_restful import Api
@@ -10,12 +10,36 @@ import pika
 from cryptography.fernet import Fernet
 from jproperties import Properties
 from datetime import datetime
-from flask_jwt_extended import JWTManager, jwt_required
+
+
+# Function get ip from headers
+def get_ip(headers):
+    ip = '10.10.10.1'
+    if 'X-Real-IP' in headers:
+        ip = headers['X-Real-IP']
+    return ip
+
+# Function load white list ips
+def load_white_list_data():
+    file = open('white_list.json')
+    return json.load(file)
+
+# Function to validate IP
+def validate_white_list(client_ip):
+    valid = False
+    data = load_white_list_data()
+    for ip in data:
+        if str(ip['ip_allowed']) == str(client_ip):
+            valid = True
+            break
+    if not valid:
+        raise Exception(f'La ip [{client_ip}] no tiene permisos para consumir los servicios')
 
 # Function to registry log
 def registry_log(file, severity, request, response):
     with open(file, 'a') as file:
-        file.write(f"[{severity}]-[{datetime.now()}]-[request=>{request}]-[response=>{response}]\n")
+        file.write(
+            f"[{severity}]-[{datetime.now()}]-[request=>{request}]-[response=>{response}]\n")
 
 # Function to read key
 def load_security_key(key):
@@ -75,13 +99,13 @@ def send_message(host, vhost, user, password, queue, message):
 
 # Clase con la logica de negocio
 class RegistrarOrdenResource(Resource):
-
-    #@jwt_required()
     def post(self):
         response = None
         try:
             # Se obtiene el request
             orden = request.json
+            # Validar IP
+            validate_white_list(get_ip(request.headers))
             # Se obtienen las configuraciones de rabbitmq
             rabbit_host = read_property('HOST_RABBIT').decode()
             virtual_host = read_property('VIRTUAL_HOST_POST').decode()
@@ -107,11 +131,13 @@ class RegistrarOrdenResource(Resource):
             registry_log('log_transactions_post.txt', 'ERROR',
                          json.dumps(orden), json.dumps(response))
             return response, 200
-        
+
+
 class ActualizarOrdenResource(Resource):
-    #@jwt_required()
     def put(self, orden_id):
         try:
+            # Validar IP
+            validate_white_list(str(request.remote_addr))
             # Se obtiene el request
             orden = request.json
             orden['id'] = orden_id
@@ -149,7 +175,6 @@ app.config['PROPAGATE_EXCEPTIONS'] = True
 app.config["JWT_SECRET_KEY"] = "GrkIDwv8flT3tkC8pxRQOLcELnfyx4o2tN5lJXqQabvHMzcPSwGypsinRDma2UXz"
 app_context = app.app_context()
 app_context.push()
-jwt = JWTManager(app)
 api = Api(app)
 
 # Agregamos el recurso que expone la funcionalidad ventas
