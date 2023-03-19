@@ -223,48 +223,6 @@
       ]
     },
     {
-      "endpoint": "/cpp/logIn",
-      "method": "POST",      
-      "output_encoding": "json",
-      "input_headers": [
-        "*"
-      ],
-      "extra_config": {
-        "auth/validator": {
-          "alg": "RS256",
-          "audience": [
-            "https://dev-5zc8cy3fn823p0om.us.auth0.com/api/v2/"
-          ],
-          "jwk_url": "https://dev-5zc8cy3fn823p0om.us.auth0.com/.well-known/jwks.json"
-        },
-        "plugin/req-resp-modifier": {
-          "name": [
-            "ip-filter"
-          ],
-          "ip-filter": {
-            "allow": true,
-            "client_ip_headers": [
-              "X-Forwarded-For",
-              "X-Real-IP",
-              "X-Appengine-Remote-Addr",
-              "Host"
-            ],
-            "CIDR": [
-              "172.10.10.1"
-            ]
-          }
-        }
-      },
-      "backend": [        
-        {          
-          "url_pattern": "/cpp/logIn",
-          "host": [
-            "http://mcs_usuario:6600"
-          ]
-        }
-      ]
-    },
-    {
       "endpoint": "/cpp/RutaClientes/{id}",
       "method": "GET",      
       "output_encoding": "json",
