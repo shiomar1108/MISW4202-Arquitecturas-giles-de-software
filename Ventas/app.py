@@ -11,7 +11,6 @@ from cryptography.fernet import Fernet
 from jproperties import Properties
 from datetime import datetime
 
-
 # Function get ip from headers
 def get_ip(headers):  
     if 'X-Real-IP' in headers:
