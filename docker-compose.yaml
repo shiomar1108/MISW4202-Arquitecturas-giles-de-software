@@ -24,8 +24,6 @@ services:
     working_dir: /backend/
     command: python app.py
     container_name: mcs_ventas
-    # ports:
-    #  - "5000:5000"
     networks:
       - ccpnetwork
     depends_on: 
