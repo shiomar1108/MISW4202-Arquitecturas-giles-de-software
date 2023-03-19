@@ -13,11 +13,11 @@ from datetime import datetime
 
 
 # Function get ip from headers
-def get_ip(headers):
-    ip = '10.10.10.1'
+def get_ip(headers):  
     if 'X-Real-IP' in headers:
-        ip = headers['X-Real-IP']
-    return ip
+        return str(headers['X-Real-IP'])
+    else:
+        raise Exception('Debe realizar el envio del header [X-Real-IP]')
 
 # Function load white list ips
 def load_white_list_data():
