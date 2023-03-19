@@ -1,0 +1,390 @@
+{
+  "$schema": "https://www.krakend.io/schema/v3.json",
+  "version": 3,
+  "name": "KrakenD Enterprise API Gateway",
+  "port": 8080,
+  "host": [
+    "http://fake_api:8080"
+  ],
+  "timeout": "3000ms",
+  "cache_ttl": "300s",
+  "debug_endpoint": true,
+  "endpoints": [
+    {
+      "endpoint": "/cpp/ventas",
+      "method": "POST",
+      "output_encoding": "json",
+      "input_headers": [
+        "*"
+      ],
+      "extra_config": {
+        "auth/validator": {
+          "alg": "RS256",
+          "audience": [
+            "https://dev-5zc8cy3fn823p0om.us.auth0.com/api/v2/"
+          ],
+          "jwk_url": "https://dev-5zc8cy3fn823p0om.us.auth0.com/.well-known/jwks.json"
+        },
+        "plugin/req-resp-modifier": {
+          "name": [
+            "ip-filter"
+          ],
+          "ip-filter": {
+            "allow": true,
+            "client_ip_headers": [
+              "X-Forwarded-For",
+              "X-Real-IP",
+              "X-Appengine-Remote-Addr",
+              "Host"
+            ],
+            "CIDR": [
+              "172.10.10.1"
+            ]
+          }
+        }
+      },
+      "backend": [
+        {
+          "url_pattern": "/cpp/ventas",
+          "host": [
+            "http://mcs_ventas:5000"
+          ]
+        }
+      ]
+    },
+    {
+      "endpoint": "/cpp/ventas/{id}",
+      "method": "PUT",
+      "output_encoding": "json",
+      "input_headers": [
+        "*"
+      ],
+      "extra_config": {
+        "auth/validator": {
+          "alg": "RS256",
+          "audience": [
+            "https://dev-5zc8cy3fn823p0om.us.auth0.com/api/v2/"
+          ],
+          "jwk_url": "https://dev-5zc8cy3fn823p0om.us.auth0.com/.well-known/jwks.json"
+        },
+        "plugin/req-resp-modifier": {
+          "name": [
+            "ip-filter"
+          ],
+          "ip-filter": {
+            "allow": true,
+            "client_ip_headers": [
+              "X-Forwarded-For",
+              "X-Real-IP",
+              "X-Appengine-Remote-Addr",
+              "Host"
+            ],
+            "CIDR": [
+              "172.10.10.1"
+            ]
+          }
+        }
+      },
+      "backend": [
+        {
+          "url_pattern": "/cpp/ventas/{id}",
+          "encoding": "json",
+          "host": [
+            "http://mcs_ventas:5000"
+          ]
+        }
+      ]
+    },
+    {
+      "endpoint": "/cpp/users",
+      "method": "GET",      
+      "output_encoding": "json-collection",
+      "input_headers": [
+        "*"
+      ],
+      "extra_config": {
+        "auth/validator": {
+          "alg": "RS256",
+          "audience": [
+            "https://dev-5zc8cy3fn823p0om.us.auth0.com/api/v2/"
+          ],
+          "jwk_url": "https://dev-5zc8cy3fn823p0om.us.auth0.com/.well-known/jwks.json"
+        },
+        "plugin/req-resp-modifier": {
+          "name": [
+            "ip-filter"
+          ],
+          "ip-filter": {
+            "allow": true,
+            "client_ip_headers": [
+              "X-Forwarded-For",
+              "X-Real-IP",
+              "X-Appengine-Remote-Addr",
+              "Host"
+            ],
+            "CIDR": [
+              "172.10.10.1"
+            ]
+          }
+        }        
+      },
+      "backend": [        
+        {
+          "is_collection": true, 
+          "url_pattern": "/cpp/users",
+          "host": [
+            "http://mcs_usuario:6600"
+          ]
+        }
+      ]
+    },
+    {
+      "endpoint": "/cpp/users",
+      "method": "POST",      
+      "output_encoding": "json",
+      "input_headers": [
+        "*"
+      ],
+      "extra_config": {
+        "auth/validator": {
+          "alg": "RS256",
+          "audience": [
+            "https://dev-5zc8cy3fn823p0om.us.auth0.com/api/v2/"
+          ],
+          "jwk_url": "https://dev-5zc8cy3fn823p0om.us.auth0.com/.well-known/jwks.json"
+        },
+        "plugin/req-resp-modifier": {
+          "name": [
+            "ip-filter"
+          ],
+          "ip-filter": {
+            "allow": true,
+            "client_ip_headers": [
+              "X-Forwarded-For",
+              "X-Real-IP",
+              "X-Appengine-Remote-Addr",
+              "Host"
+            ],
+            "CIDR": [
+              "172.10.10.1"
+            ]
+          }
+        }
+      },
+      "backend": [        
+        {          
+          "url_pattern": "/cpp/users",
+          "host": [
+            "http://mcs_usuario:6600"
+          ]
+        }
+      ]
+    },
+    {
+      "endpoint": "/cpp/users/{id}",
+      "method": "GET",      
+      "output_encoding": "json",
+      "input_headers": [
+        "*"
+      ],
+      "extra_config": {
+        "auth/validator": {
+          "alg": "RS256",
+          "audience": [
+            "https://dev-5zc8cy3fn823p0om.us.auth0.com/api/v2/"
+          ],
+          "jwk_url": "https://dev-5zc8cy3fn823p0om.us.auth0.com/.well-known/jwks.json"
+        },
+        "plugin/req-resp-modifier": {
+          "name": [
+            "ip-filter"
+          ],
+          "ip-filter": {
+            "allow": true,
+            "client_ip_headers": [
+              "X-Forwarded-For",
+              "X-Real-IP",
+              "X-Appengine-Remote-Addr",
+              "Host"
+            ],
+            "CIDR": [
+              "172.10.10.1"
+            ]
+          }
+        }
+      },
+      "backend": [        
+        {          
+          "url_pattern": "/cpp/users/{id}",
+          "host": [
+            "http://mcs_usuario:6600"
+          ]
+        }
+      ]
+    },
+    {
+      "endpoint": "/cpp/RutaClientes/{id}",
+      "method": "GET",      
+      "output_encoding": "json",
+      "input_headers": [
+        "*"
+      ],
+      "extra_config": {
+        "auth/validator": {
+          "alg": "RS256",
+          "audience": [
+            "https://dev-5zc8cy3fn823p0om.us.auth0.com/api/v2/"
+          ],
+          "jwk_url": "https://dev-5zc8cy3fn823p0om.us.auth0.com/.well-known/jwks.json"
+        },
+        "plugin/req-resp-modifier": {
+          "name": [
+            "ip-filter"
+          ],
+          "ip-filter": {
+            "allow": true,
+            "client_ip_headers": [
+              "X-Forwarded-For",
+              "X-Real-IP",
+              "X-Appengine-Remote-Addr",
+              "Host"
+            ],
+            "CIDR": [
+              "172.10.10.1"
+            ]
+          }
+        }
+      },
+      "backend": [        
+        {          
+          "url_pattern": "/cpp/RutaClientes/{id}",
+          "host": [
+            "http://mcs_rutas:5000"
+          ]
+        }
+      ]
+    }
+  ],
+  "sequential_start": true,
+  "async_agent": [
+    {
+      "name": "async-agent-demo",
+      "backend": [
+        {
+          "host": [
+            "http://127.0.0.1:8080"
+          ],
+          "url_pattern": "/__debug/async-agent-demo",
+          "method": "POST"
+        }
+      ],
+      "consumer": {
+        "topic": "*.bar",
+        "workers": 20
+      },
+      "connection": {
+        "max_retries": 10,
+        "backoff_strategy": "exponential-jitter"
+      },
+      "extra_config": {
+        "async/amqp": {
+          "name": "krakend",
+          "host": "amqp://guest:guest@rabbitmq:5672/",
+          "exchange": "foo",
+          "prefetch_count": 40,
+          "auto_ack": true
+        }
+      }
+    }
+  ],
+  "extra_config": {
+    "telemetry/metrics": {
+      "collection_time": "30s",
+      "listen_address": ":8090"
+    },
+    "telemetry/influx": {
+      "address": "http://influxdb:8086",
+      "ttl": "25s",
+      "buffer_size": 100,
+      "username": "krakend-dev",
+      "password": "pas5w0rd"
+    },
+    "telemetry/logging": {
+      "level": "DEBUG",
+      "prefix": "[KRAKEND]",
+      "syslog": false,
+      "stdout": true
+    },
+    "telemetry/gelf": {
+      "address": "logstash:12201",
+      "enable_tcp": false
+    },
+    "telemetry/opencensus": {
+      "sample_rate": 100,
+      "reporting_period": 1,
+      "enabled_layers": {
+        "backend": true,
+        "router": true
+      },
+      "exporters": {
+        "jaeger": {
+          "endpoint": "http://jaeger:16686/api/traces",
+          "service_name": "krakend"
+        }
+      }
+    },
+    "security/cors": {
+      "allow_origins": [
+        "*"
+      ],
+      "allow_methods": [
+        "POST",
+        "GET",
+        "PUT"
+      ],
+      "allow_headers": [
+        "Origin",
+        "Authorization",
+        "Content-Type"
+      ],
+      "expose_headers": [
+        "Content-Length"
+      ],
+      "max_age": "12h"
+    },
+    "auth/revoker": {
+      "N": 10000000,
+      "P": 1e-7,
+      "hash_name": "optimal",
+      "TTL": 1500,
+      "port": 1234,
+      "token_keys": [
+        "jti"
+      ]
+    },
+    "plugin/http-server": {
+      "name": [
+        "ip-filter"
+      ],
+      "ip-filter": {
+        "allow": true,
+        "client_ip_headers": [
+          "X-Forwarded-For",
+          "X-Real-IP",
+          "X-Appengine-Remote-Addr",
+          "Host"
+        ],
+        "CIDR": [
+          "172.10.10.1"
+        ]
+      }
+    },    
+    "router": {
+      "return_error_msg": true
+    }    
+  },
+  "plugin": {
+    "pattern": ".so",
+    "folder": "/opt/krakend/plugins/"
+  }
+}

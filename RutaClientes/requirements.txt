@@ -6,11 +6,8 @@ Flask-RESTful
 Flask-SQLAlchemy
 itsdangerous
 Jinja2
-jsonschema
 marshmallow
-marshmallow-sqlalchemy
-redis
 requests
 rq
-SQLAlchemy
 Werkzeug
+flask_jwt_extended

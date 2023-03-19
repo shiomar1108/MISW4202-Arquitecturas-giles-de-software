@@ -3,12 +3,16 @@ FROM python:3.8-alpine
 
 # Adding git, bash and openssh to the image
 RUN apk update && apk upgrade && \
-    apk add --no-cache bash git openssh
+    apk add --no-cache bash git openssh \
+    python3-dev \
+    gcc \
+    libc-dev \
+    libffi-dev
 
 # Make dir app
-RUN mkdir /backend
-WORKDIR /backend
-COPY requirements.txt /backend/
+RUN mkdir /rutas
+WORKDIR /rutas
+COPY requirements.txt /rutas/
 
 RUN pip install -r requirements.txt
 
@@ -19,4 +23,4 @@ COPY . .
 EXPOSE 5000
 
 # Run the executable
-CMD ["python", "base.py", "--host", "0.0.0.0"]
+CMD ["python", "app.py", "--host", "0.0.0.0"]
