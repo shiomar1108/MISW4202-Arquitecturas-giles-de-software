@@ -18,7 +18,6 @@ Este experimento tiene como propósito comprobar las siguientes tácticas de arq
 * **Separación de entidades:** A través de Docker se contenerizaran los diferentes componentes que hacen parte del experimento, proporcionando entornos independientes de ejecución.
 * **Limitación de acceso a los recursos:** Al estar contenerizados todos los componentes que hacen parte del experimento, la única forma de poder llegar a ellos es a través del Api Gateway, si se tratase de consumir un recurso de forma directa no se podría.
 
-
 ## Historias de arquitecturas seleccionadas
 * Como empleado de Marketing y Ventas cuando genere una orden de venta dado que el sistema opera normalmente quiero ser el único que pueda realizar alguna modificación en dicha orden para garantizar que quien genero la orden inicial es quien puede modificarla y no alguien más. Esto debe suceder 100% de las veces.
 * Como Transportista cuando existan ingresos al sistema dado que el sistema opera normalmente quiero que se garantice que el ingreso al sistema haya sido autorizado por mi mismo para garantizar que si sea yo el que hace los movimientos en la plataforma. Esto debe suceder el 100% de las veces.
@@ -37,8 +36,25 @@ Este experimento tiene como propósito comprobar las siguientes tácticas de arq
   
 - **Docker**:
   - Desde la raiz del proyecto, se debe ejecutar en una terminal el siguiente comando **`docker compose up`** para que docker a través del archivo **`docker-compose.yaml`** realice la creación de las imagenes y el despliegue de los contenedores.
+ 
+  ![image](https://user-images.githubusercontent.com/110913673/221440046-95944fa5-8c79-4daf-a112-64707d177d8e.png)
 
-  ![image](https://user-images.githubusercontent.com/110913673/226149293-ff6db13e-135c-4b0a-bdf8-c43fba304a39.png)
+- **JMeter**:
+Ir a la carpeta **`bin`** donde se instalo JMeter y ejecutar el archivo **`jmeter.bat`**.
+
+![image](https://user-images.githubusercontent.com/110913673/221445381-c93eefe5-b9c1-40eb-9d31-daf2de0bcacc.png)
+
+Una vez abierto JMeter ir a **`File`** -> **`Open`**.
+
+![image](https://user-images.githubusercontent.com/110913673/221445579-d0d7dd73-03d1-4ac6-908c-e716b8ea956d.png)
+
+Seleccionamos el archivo **`prueba_arquitectura.jmx`** que se encuentra en la ruta **`MISW4202-11-Equipo1/jmeter`**.
+
+![image](https://user-images.githubusercontent.com/110913673/221445834-259d2259-782b-4449-a956-eae8af41a048.png)
+
+Por ultimo se ejecuta las pruebas.
+
+![image](https://user-images.githubusercontent.com/110913673/221446161-bda2d2ba-2fe6-41cb-9c9e-6338cac4f3d5.png)
 
 ## Descripcion de los componentes que hacen parte del experimento:
 
@@ -47,7 +63,6 @@ El microservicio de Venta es el encargado de procesar las ordenes de ventas que 
 Se espera que este microservicio reciba las órdenes de venta ingresadas por los vendedores y posteriormente haga el envió a la cola RabbitMQ correspondiente (cola de creación o cola de actualización) siempre y cuando las credenciales sean correctas.
 Así mismo se espera que este microservicio registre logs en cada transacción que se realice ya sea un flujo exitoso o de error.
 Las propiedades de conectividad a la colas `post_orders_queue` y `put_orders_queue` se encuentran en el archivo de propiedades `app-config.properties`.
-
 
 ### Microservicio de Registro de orden de Venta POST
 El microservicio de Registro de Venta es el encargado de estar escuchando la cola RabbitMQ de creación de órdenes y una vez detecte un nuevo mensaje, desencole y registra la información obtenido en el log `log_post_orders.txt`.
@@ -59,13 +74,13 @@ Las propiedades de conectividad a la cola `put_orders_queue` se encuentran en el
 
 ![image](https://user-images.githubusercontent.com/110913673/226152083-6bc436f4-65d2-4ce2-a554-0333f38d1ff0.png)
 
-### Microservicio ruta de clientes
+### Microservicio Consulta de Ruta de Clientes
 El microservicio de Ruta Cliente es el encargado de regresar una lista de clientes que se deben visitar según el repartidor que ingrese al sistema.
 Se espero que este microservicio muestre solo la información de los conductores autenticados y prevenga cualquier consulta que no provenga de un usuario conductores.
 
 ![image](https://user-images.githubusercontent.com/110913673/226152015-da55c2a0-312b-4d31-8612-60e42349fe1c.png)
 
-### ApiGateway KrakenD
+### API Gateway KrakenD
 El Api Gateway es un componente dentro de la arquitectura estilo microservicios que tiene varias funciones, entre ellas las siguientes:
 - Proveer un solo punto de acceso a las APIs y que estas no sean usadas directamente por los consumidores.
 - Proveer mecanismos de filtrados de IPs, Autenticación de las Apis expuestas.
@@ -83,8 +98,8 @@ En la siguiente imagen se ilustra el flujo de autenticación usando Auth0 y Krak
 
 
 ## Demostración ejecución pruebas
-
-
+* **Repositorio Git con la fuentes del experimento:** https://github.com/shiomar-salazar/MISW4202-11-Equipo1
+* **Video de ejeución del experimento y análisis:** https://youtu.be/FeYGXsbxcP4z
 
 ### Collection de Postman para ejecución de pruebas
 Se debe descomprimir y luego importar en la herramienta Postman
