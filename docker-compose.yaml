@@ -19,6 +19,7 @@ services:
         - ./Ventas/app-config.properties/:/backend/app-config.properties
         - ./Ventas/log_transactions_put.txt/:/backend/log_transactions_put.txt
         - ./Ventas/log_transactions_post.txt/:/backend/log_transactions_post.txt
+        
     build: ./Ventas
     working_dir: /backend/
     command: python app.py

@@ -182,4 +182,4 @@ api.add_resource(ActualizarOrdenResource, '/cpp/ventas/<int:orden_id>')
 
 # Agregamos el recurso que expone la funcionalidad ventas
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0')
+    app.run(debug=True, host='0.0.0.0', port=5000)
