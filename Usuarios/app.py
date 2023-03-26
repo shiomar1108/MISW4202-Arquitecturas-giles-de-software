@@ -77,13 +77,12 @@ class UserLogIn(Resource):
         contrasena_encriptada = hashlib.md5(request.json["password"].encode('utf-8')).hexdigest()
         usuario = User.query.filter(User.username == request.json["username"],
                                        User.password == contrasena_encriptada).first()
-        db.session.commit()
-        token_de_acceso = create_access_token(identity=usuario.id)
+        token_de_acceso = create_access_token(identity=user_schema.dump(usuario))
         return {"mensaje": "Inicio de sesión exitoso", "token": token_de_acceso, "id": usuario.id, "rol": usuario.rol}
 
 api.add_resource(UserListResource, '/cpp/users')
 api.add_resource(UserResource, '/cpp/users/<int:user_id>')
-api.add_resource(UserLogIn, '/cpp/logIn')
+api.add_resource(UserLogIn, '/cpp/login')
 
 if __name__ == '__main__':
-    app.run(debug=True,host='0.0.0.0',port=6600)
+    app.run(debug=True,host='0.0.0.0')

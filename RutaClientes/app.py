@@ -5,24 +5,27 @@ from flask import request
 from flask import Flask
 from flask_cors import CORS
 from flask_restful import Api
-from flask_jwt_extended import jwt_required
-from flask_jwt_extended import JWTManager
+from flask_jwt_extended import JWTManager, jwt_required, decode_token
+
 
 class RutaClientes(Resource):
-    
-    def get(self, userid):
+    # @jwt_required()
+    def get(self, user_id):
+        jwt = request.headers['jwt']
+        decodedToken = decode_token(jwt)
         headers = {'Authorization': request.headers['Authorization']}
-        user = requests.get(f"http://mcs_usuario:6600/cpp/users/{userid}", headers=headers)
+        user = requests.get(
+            f"http://mcs_usuario:5000/cpp/users/{user_id}", headers=headers)
         print(user)
         hostIp = socket.gethostbyname(socket.gethostname())
         print(user.json()['rol'])
         print(user.json()['id'])
         if user.json()['rol'] == 'REP':
-            if user.status_code==200 and userid == user.json()['id']  :
+            if user.status_code == 200 and user_id == user.json()['id']:
                 response = {
                     "HTTPCode": 200,
                     "IP": hostIp,
-                    "user": userid,
+                    "user": user_id,
                     "RutaEntrega": {
                         "Cliente1": "Tienda de Pedro",
                         "Direccion1": "Santa Fe, Bogota",
@@ -33,20 +36,24 @@ class RutaClientes(Resource):
                         "Cliente4": "Tienda de Pedro",
                         "Direccion4": "Puente Aranda, Bogota",
                     },
+                    "decode_token": str(decodedToken['sub'])
                 }
+                return response, 200
             else:
                 response = {
                     "HTTPCode": 409,
                     "Mensaje": "No eres el usuario correcto",
                     "IP": hostIp,
                 }
+                return response, 409
         else:
             response = {
-                    "HTTPCode": 409,
-                    "Mensaje": "No tienes el rol correcto",
-                    "IP": hostIp,
-                }
-        return response
+                "HTTPCode": 409,
+                "Mensaje": "No tienes el rol correcto",
+                "IP": hostIp,
+            }
+            return response, 409
+
 
 app = Flask(__name__)
 cors = CORS(app)
@@ -57,8 +64,8 @@ app_context.push()
 api = Api(app)
 
 # Agregamos el recurso que expone la funcionalidad ventas
-api.add_resource(RutaClientes, "/cpp/RutaClientes/<int:userid>")
+api.add_resource(RutaClientes, "/cpp/ruta/clientes/<int:user_id>")
 
 # Agregamos el recurso que expone la funcionalidad ventas
 if __name__ == "__main__":
-    app.run(debug=True, host='0.0.0.0',port=5000)
+    app.run(debug=True, host='0.0.0.0')

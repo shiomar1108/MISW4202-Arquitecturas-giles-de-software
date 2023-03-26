@@ -129,7 +129,7 @@ class RegistrarOrdenResource(Resource):
             }
             registry_log('log_transactions_post.txt', 'ERROR',
                          json.dumps(orden), json.dumps(response))
-            return response, 200
+            return response, 500
 
 
 class ActualizarOrdenResource(Resource):
@@ -164,7 +164,7 @@ class ActualizarOrdenResource(Resource):
             }
             registry_log('log_transactions_put.txt', 'ERROR',
                          json.dumps(orden), json.dumps(response))
-            return response, 200
+            return response, 500
 
 
 # Configuración Flask
@@ -182,4 +182,4 @@ api.add_resource(ActualizarOrdenResource, '/cpp/ventas/<int:orden_id>')
 
 # Agregamos el recurso que expone la funcionalidad ventas
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(debug=True, host='0.0.0.0')

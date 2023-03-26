@@ -20,7 +20,7 @@ RUN pip install -r requirements.txt
 COPY . .
 
 # Expose port 8080 to the outside world
-EXPOSE 6600
+EXPOSE 5000
 
 # Run the executable
-CMD ["python", "api.py", "--host", "0.0.0.0"]
+CMD ["python", "app.py", "--host", "0.0.0.0"]

@@ -13,7 +13,7 @@
     {
       "endpoint": "/cpp/ventas",
       "method": "POST",
-      "output_encoding": "json",
+      "output_encoding": "no-op",
       "input_headers": [
         "*"
       ],
@@ -55,7 +55,7 @@
     {
       "endpoint": "/cpp/ventas/{id}",
       "method": "PUT",
-      "output_encoding": "json",
+      "output_encoding": "no-op",
       "input_headers": [
         "*"
       ],
@@ -98,7 +98,7 @@
     {
       "endpoint": "/cpp/users",
       "method": "GET",      
-      "output_encoding": "json-collection",
+      "output_encoding": "no-op",
       "input_headers": [
         "*"
       ],
@@ -130,52 +130,9 @@
       },
       "backend": [        
         {
-          "is_collection": true, 
           "url_pattern": "/cpp/users",
           "host": [
-            "http://mcs_usuario:6600"
-          ]
-        }
-      ]
-    },
-    {
-      "endpoint": "/cpp/users",
-      "method": "POST",      
-      "output_encoding": "json",
-      "input_headers": [
-        "*"
-      ],
-      "extra_config": {
-        "auth/validator": {
-          "alg": "RS256",
-          "audience": [
-            "https://dev-5zc8cy3fn823p0om.us.auth0.com/api/v2/"
-          ],
-          "jwk_url": "https://dev-5zc8cy3fn823p0om.us.auth0.com/.well-known/jwks.json"
-        },
-        "plugin/req-resp-modifier": {
-          "name": [
-            "ip-filter"
-          ],
-          "ip-filter": {
-            "allow": true,
-            "client_ip_headers": [
-              "X-Forwarded-For",
-              "X-Real-IP",
-              "X-Appengine-Remote-Addr",
-              "Host"
-            ],
-            "CIDR": [
-              "172.10.10.1"
-            ]
-          }
-        }
-      },
-      "backend": [        
-        {          
-          "url_pattern": "/cpp/users",
-          "host": [
-            "http://mcs_usuario:6600"
+            "http://mcs_usuario:5000"
           ]
         }
       ]
@@ -183,7 +140,7 @@
     {
       "endpoint": "/cpp/users/{id}",
       "method": "GET",      
-      "output_encoding": "json",
+      "output_encoding": "no-op",
       "input_headers": [
         "*"
       ],
@@ -217,15 +174,15 @@
         {          
           "url_pattern": "/cpp/users/{id}",
           "host": [
-            "http://mcs_usuario:6600"
+            "http://mcs_usuario:5000"
           ]
         }
       ]
     },
     {
-      "endpoint": "/cpp/RutaClientes/{id}",
+      "endpoint": "/cpp/ruta/clientes/{id}",
       "method": "GET",      
-      "output_encoding": "json",
+      "output_encoding": "no-op",
       "input_headers": [
         "*"
       ],
@@ -257,9 +214,51 @@
       },
       "backend": [        
         {          
-          "url_pattern": "/cpp/RutaClientes/{id}",
+          "url_pattern": "/cpp/ruta/clientes/{id}",
           "host": [
             "http://mcs_rutas:5000"
+          ]
+        }
+      ]
+    },
+    {
+      "endpoint": "/cpp/login",
+      "method": "POST",      
+      "output_encoding": "no-op",
+      "input_headers": [
+        "*"
+      ],
+      "extra_config": {
+        "auth/validator": {
+          "alg": "RS256",
+          "audience": [
+            "https://dev-5zc8cy3fn823p0om.us.auth0.com/api/v2/"
+          ],
+          "jwk_url": "https://dev-5zc8cy3fn823p0om.us.auth0.com/.well-known/jwks.json"
+        },
+        "plugin/req-resp-modifier": {
+          "name": [
+            "ip-filter"
+          ],
+          "ip-filter": {
+            "allow": true,
+            "client_ip_headers": [
+              "X-Forwarded-For",
+              "X-Real-IP",
+              "X-Appengine-Remote-Addr",
+              "Host"
+            ],
+            "CIDR": [
+              "172.10.10.1"
+            ]
+          }
+        }
+      },
+      "backend": [        
+        {          
+          "url_pattern": "/cpp/login",
+          "host": [
+            "http://mcs_usuario:5000"
           ]
         }
       ]
